@@ -1,0 +1,613 @@
+.title {
+  padding: 70px 0 40px;
+  overflow: hidden;
+}
+.title h3 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #333333;
+}
+.title h5 {
+  float: left;
+  font-weight: normal;
+  font-size: 16px;
+  color: #333333;
+}
+.title h5:nth-of-type(1) {
+  margin-left: 46%;
+}
+.title h5:nth-of-type(2) {
+  margin-left: 24px;
+}
+header {
+  height: 40px;
+  width: 100%;
+  background: #333333;
+}
+header .content {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+header .content li {
+  float: left;
+  font-size: 11px;
+}
+header .content a {
+  line-height: 40px;
+  color: #fff;
+}
+header .content a span {
+  font-size: 11px;
+}
+header .content .h_left {
+  float: left;
+}
+header .content .h_left li {
+  margin-right: 28px;
+}
+header .content .h_right {
+  float: right;
+}
+header .content .h_right li {
+  margin-left: 28px;
+}
+nav {
+  width: 100%;
+  height: 218px;
+}
+nav h1 {
+  width: 100%;
+  height: 169px;
+  text-align: center;
+  position: relative;
+}
+nav h1 a {
+  float: left;
+  width: 98px;
+  height: 58px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+nav h1 a img {
+  width: 100%;
+  height: 100%;
+}
+nav .nav {
+  width: 89%;
+  height: 49px;
+  margin: 0 auto;
+  line-height: 49px;
+}
+nav .nav .n_left {
+  float: left;
+  margin-left: 20px;
+}
+nav .nav .n_left li {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 71px;
+}
+nav .nav .n_right {
+  float: right;
+}
+nav .nav .n_right input {
+  width: 180px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #333333;
+}
+nav .nav .n_right span {
+  margin-left: -20px;
+}
+.banner {
+  width: 100%;
+}
+.banner a img {
+  width: 100%;
+  height: 100%;
+}
+.new {
+  width: 73.33%;
+  margin: 0 auto;
+}
+.new .content {
+  padding: 0 25px 0;
+  overflow: hidden;
+  position: relative;
+}
+.new .content ul {
+  overflow: hidden;
+  /**/
+}
+.new .content ul li {
+  width: 214px;
+  height: 399px;
+  padding: 10px;
+  float: left;
+}
+.new .content ul li .img {
+  height: 271px;
+  width: 100%;
+  padding: 30px 0 30px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.new .content ul li .img img {
+  width: 210px;
+  height: 210px;
+}
+.new .content ul li .message {
+  padding: 29px auto 29px;
+}
+.new .content ul li .message img {
+  width: 60px;
+  height: 21px;
+  margin-left: 80px;
+}
+.new .content ul li .message p {
+  margin-top: 20px;
+  text-align: center;
+}
+.new .content ul li .message p:nth-of-type(1) {
+  font-size: 12px;
+}
+.new .content ul li .message p:nth-of-type(1) a {
+  color: #666;
+  margin-right: 5px;
+}
+.new .content ul li .message p:nth-of-type(2) {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+.new .content ul li .message p:nth-of-type(2) span:nth-of-type(2) {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  color: #ccc;
+  display: none;
+}
+.new .content ul li:hover {
+  background: #F0F0F0;
+}
+.new .content ul li:hover p:nth-of-type(2):hover span:nth-of-type(2) {
+  display: block;
+}
+.new .content .btn {
+  float: left;
+  position: absolute;
+  font-size: 22px;
+  color: #333;
+}
+.new .content .btn:nth-of-type(1) {
+  top: 50%;
+  right: 0;
+}
+.new .content .btn:nth-of-type(2) {
+  top: 50%;
+  left: 0;
+}
+.recommend {
+  width: 73.33%;
+  margin: 0 auto;
+}
+.recommend .list {
+  width: 31.8%;
+  height: auto;
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.recommend .list .shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.recommend .list .shade img {
+  width: 96px;
+  height: 34px;
+  margin: 60% 38%;
+}
+.recommend .list:hover .shade {
+  display: block;
+}
+.recommend .brand {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.recommend .brand div {
+  width: 92%;
+  overflow: hidden;
+  margin: 0 auto 70px;
+}
+.recommend .brand div ul {
+  overflow: hidden;
+  width: 1200px;
+}
+.recommend .brand div ul li {
+  float: left;
+  width: 71px;
+  height: 34px;
+  margin: 0 10px;
+}
+.recommend .brand span {
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  top: 5px;
+}
+.recommend .brand span:nth-of-type(1) {
+  left: 0;
+  background: #0062BC;
+}
+.recommend .brand span:nth-of-type(2) {
+  right: 0;
+  background: #0062BC;
+}
+.information {
+  width: 73.33%;
+  margin: 0 auto;
+}
+.information .title {
+  padding: 60px 0 40px;
+}
+.information .title h3 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.information .title p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #333333;
+}
+.information .list {
+  width: 31.8%;
+  height: auto;
+  float: left;
+  margin-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+}
+.information .list .shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.information .list p {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  background: rgba(255, 255, 255, 0.8);
+  left: 40%;
+  top: 25%;
+  border-radius: 50%;
+  display: none;
+}
+.information .list p span {
+  float: left;
+  width: 0;
+  height: 0;
+  border-width: 27px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
+  margin: 8px 0 0 27px;
+}
+.information .list2 {
+  margin: 0 20px 70px 20px;
+}
+.information .list:hover .shade {
+  display: block;
+}
+.information .list:hover p {
+  display: block;
+}
+.information .classify {
+  width: 100%;
+  overflow: hidden;
+}
+.information .classify a {
+  overflow: hidden;
+}
+.information .classify a .litile {
+  width: 23%;
+  height: auto;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.information .classify a .litile .shade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.information .classify a .litile p {
+  position: absolute;
+  font-size: 15px;
+  color: #fff;
+  left: 28%;
+  top: 50%;
+  display: none;
+}
+.information .classify a .litile:hover .shade {
+  display: block;
+}
+.information .classify a .litile:hover p {
+  display: block;
+}
+.information .classify a .litile4 {
+  margin-right: 0;
+}
+.information .video {
+  width: 100%;
+  height: 444px;
+  display: block;
+  margin-bottom: 20px;
+}
+.information .classify1 {
+  width: 100%;
+  overflow: hidden;
+}
+.information .classify1 a {
+  overflow: hidden;
+}
+.information .classify1 a .litile {
+  width: 23%;
+  height: auto;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.information .classify1 a .litile div p:nth-of-type(1) {
+  text-align: center;
+  font-size: 20px;
+  color: #3A3A3A;
+  padding-top: 5px;
+  font-family: "微软雅黑";
+}
+.information .classify1 a .litile div p:nth-of-type(2) {
+  text-align: center;
+  font-size: 12px;
+  color: #8e8e8e;
+  font-family: "微软雅黑";
+}
+.information .classify1 a .litile div p:nth-of-type(1):before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #3A3A3A;
+  margin: 0px 10px 7px 0;
+}
+.information .classify1 a .litile div p:nth-of-type(1):after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #3A3A3A;
+  margin: 0px 0 7px 10px;
+}
+.information .classify1 a .litile:hover div {
+  background: #f0efed;
+}
+.information .classify1 a .litile4 {
+  margin-right: 0;
+}
+.information .classify2 {
+  width: 100%;
+  overflow: hidden;
+}
+.information .classify2 a {
+  overflow: hidden;
+}
+.information .classify2 a .litile {
+  width: 23%;
+  height: auto;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.information .classify2 a .litile div p:nth-of-type(1) {
+  text-align: center;
+  font-size: 20px;
+  color: #3A3A3A;
+  padding-top: 5px;
+  font-family: "微软雅黑";
+}
+.information .classify2 a .litile div p:nth-of-type(2) {
+  text-align: center;
+  font-size: 12px;
+  color: #8e8e8e;
+  font-family: "微软雅黑";
+}
+.information .classify2 a .litile div p:nth-of-type(1):before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #3A3A3A;
+  margin: 0px 10px 7px 0;
+}
+.information .classify2 a .litile div p:nth-of-type(1):after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #3A3A3A;
+  margin: 0px 0 7px 10px;
+}
+.information .classify2 a .litile:hover div {
+  background: #f0efed;
+}
+.information .classify2 a .litile4 {
+  margin-right: 0;
+}
+footer {
+  width: 100%;
+  background: #333;
+}
+footer .top {
+  width: 100%;
+  height: 116px;
+  border-bottom: 1px solid #666;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+footer .top ul {
+  overflow: hidden;
+}
+footer .top ul li {
+  float: left;
+  margin-left: 4%;
+}
+footer .top ul li a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  float: left;
+  margin-left: 20px;
+}
+footer .top ul li span {
+  width: 28px;
+  height: 28px;
+  float: left;
+}
+footer .top ul li:nth-of-type(1) {
+  margin-left: 6%;
+}
+footer .top ul li:nth-of-type(1) span {
+  background: url(../img/icon.png) -10px -10px;
+}
+footer .top ul li:nth-of-type(2) span {
+  background: url(../img/icon.png) -57px -11px;
+}
+footer .top ul li:nth-of-type(3) span {
+  background: url(../img/icon.png) -10px -58px;
+}
+footer .top ul li:nth-of-type(4) span {
+  background: url(../img/icon.png) -57px -58px;
+}
+footer .center {
+  padding-top: 25px;
+  overflow: hidden;
+}
+footer .center .list {
+  margin-left: 7%;
+  float: left;
+}
+footer .center .list ul h5 {
+  font-size: 12px;
+  color: #fff;
+}
+footer .center .list ul li {
+  font-size: 12px;
+  margin-top: 15px;
+}
+footer .center .list ul li a {
+  color: #666;
+}
+footer .center .list ul li:nth-of-type(1) {
+  margin-top: 20px;
+}
+footer .center .list:nth-of-type(1) {
+  margin-left: 6%;
+}
+footer .center2 {
+  overflow: hidden;
+  padding-top: 50px;
+}
+footer .center2 ul:nth-of-type(1) {
+  float: left;
+  margin-left: 6%;
+  margin-top: 120px;
+}
+footer .center2 ul:nth-of-type(1) li {
+  float: left;
+  width: 127px;
+  height: 47px;
+  margin-right: 20px;
+}
+footer .center2 ul:nth-of-type(2) {
+  float: left;
+  margin-left: 12%;
+}
+footer .center2 ul:nth-of-type(2) li {
+  float: left;
+  margin-right: 20px;
+}
+footer .center2 ul:nth-of-type(2) li div {
+  padding: 8px;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+}
+footer .center2 ul:nth-of-type(2) li p {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin-top: 12px;
+}
+footer .foot {
+  overflow: :hidden;
+  margin-top: 25px;
+  margin-left: 6%;
+}
+footer .foot ul {
+  overflow: hidden;
+}
+footer .foot ul li {
+  float: left;
+}
+footer .foot ul li a {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  padding: 0 10px 0;
+  color: #fff;
+  font-size: 12px;
+}
+footer .foot ul li:nth-of-type(1) a {
+  border-left: none;
+  padding-left: 0px;
+}
+footer .foot ul li:last-of-type a {
+  border-right: none;
+  padding-right: 0px;
+}
+footer .foot .content2 {
+  padding: 10px 0 30px;
+}
+footer .foot .content2 p {
+  font-size: 12px;
+  color: #fff;
+}
+footer .foot .content2 p a {
+  font-size: 12px;
+  color: #fff;
+}

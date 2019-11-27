@@ -46,7 +46,34 @@ header{
 			float: left;
 			li{
 				margin-right: 28px;
+				position: relative;
+				.img{
+					position: absolute;
+					top:50px;
+					z-index:100;
+					border:1px solid #CCCCCC;
+					display:none;
+					div{
+						padding: 8px;
+						width: 100px;
+					    height:100px;
+						background: #fff;
+					}
+					p{
+						font-size: 12px;
+						color: #000;
+						text-align: center;
+						font-weight: 400;
+						margin-bottom: 5px;
+					}
+				}
 			}
+			li:hover{
+				.img{
+					display:block;
+				}
+			}
+		
 		}
 		.h_right{
 			float: right;
@@ -60,6 +87,8 @@ header{
 nav{
 	width: 100%;
 	height:218px;
+	border-bottom: 1px solid #f1f1f1;
+	position:relative;
 	h1{
 		width: 100%;
 		height: 169px;
@@ -90,13 +119,14 @@ nav{
 			margin-left:20px;
 			li{
 				float: left;
-				font-size: 20px;
+				font-size: 21px;
 				font-weight: bold;
 				margin-right: 71px;
+				a:hover{
+					border-bottom: 2px solid #000;
+				}
 			}
-			li:hover{
-				
-			}
+			
 		}
 		.n_right{
 			float: right;
@@ -110,19 +140,45 @@ nav{
 				margin-left: -20px;
 			}
 		}
-		.down{
-			width: 98vw;
-			height: 400px;
-			background: #fff;
-			border: 1px solid #000000;
-			position: absolute;
-			top:49px;
-			left:-6%;
-			z-index: 1000;
-			display: none;
+		
+	}
+	.down{
+		width: 100%;
+		height:0;
+		background: #fff;
+		border-bottom: 2px solid #000000;
+		position: absolute;
+		left:0;
+		top:219px;
+		z-index: 1000;
+		overflow: hidden;
+		transition: 0.5s;
+		.content{
+			margin: 34px 0 50px 7%;
+			.list{
+				float:left;
+				margin-right:130px;
+				h4{
+					font-size: 18px;
+					color: #000;
+					font-family: "黑体";
+					margin-bottom: 20px;
+				}
+				ul{
+					li{
+						margin-right:30px;
+						float:left;
+						a{
+							font-size: 13px;
+							color: #5b5b5a;
+							line-height: 35px;
+							font-weight: 600;
+						}
+					}
+				}
+			}
 		}
 	}
-	
 	.nav-fixde{
 		width: 100%;
 		position:fixed;
@@ -130,17 +186,24 @@ nav{
 		top:0;
 		z-index:1000;
 		display:none;
+		border-bottom:3px solid #000;
 		.nav{
 			width: 89%;
-			height: 49px;
+			height: 50px;
 			margin: 0 auto;
-			line-height:49px;
+			line-height:50px;
+			.img{
+				height:38px;
+				width: 60px;
+				float: left;
+				margin-top: 5px;
+			}
 			.n_left{
 				float: left;
-				margin-left:20px;
+				margin-left:40px;
 				li{
 					float: left;
-					font-size: 20px;
+					font-size: 21px;
 					font-weight: bold;
 					margin-right: 71px;
 				}
@@ -155,6 +218,43 @@ nav{
 				}
 				span{
 					margin-left: -20px;
+				}
+			}
+		}
+		.down-fixde{
+			width: 100%;
+			height:0;
+			background: #fff;
+			border-bottom: 2px solid #000000;
+			position: absolute;
+			left:0;
+			top:52px;
+			z-index: 1000;
+			overflow: hidden;
+			transition: 0.5s;
+			.content-fixde{
+				margin: 34px 0 50px 7%;
+				.list{
+					float:left;
+					margin-right:130px;
+					h4{
+						font-size: 18px;
+						color: #000;
+						font-family: "黑体";
+						margin-bottom: 20px;
+					}
+					ul{
+						li{
+							margin-right:30px;
+							float:left;
+							a{
+								font-size: 13px;
+								color: #5b5b5a;
+								line-height: 35px;
+								font-weight: 600;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -423,6 +523,11 @@ nav{
 		p{
 			display:block;
 		}
+	}
+	video{
+		width: 100%; 
+		height: 100%; 
+		object-fit: fill;
 	}
 	.classify{
 		width: 100%;

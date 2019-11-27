@@ -48,6 +48,30 @@ header .content .h_left {
 }
 header .content .h_left li {
   margin-right: 28px;
+  position: relative;
+}
+header .content .h_left li .img {
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+  border: 1px solid #CCCCCC;
+  display: none;
+}
+header .content .h_left li .img div {
+  padding: 8px;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+header .content .h_left li .img p {
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+header .content .h_left li:hover .img {
+  display: block;
 }
 header .content .h_right {
   float: right;
@@ -58,6 +82,8 @@ header .content .h_right li {
 nav {
   width: 100%;
   height: 218px;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative;
 }
 nav h1 {
   width: 100%;
@@ -83,6 +109,7 @@ nav .nav {
   height: 49px;
   margin: 0 auto;
   line-height: 49px;
+  position: relative;
 }
 nav .nav .n_left {
   float: left;
@@ -90,9 +117,12 @@ nav .nav .n_left {
 }
 nav .nav .n_left li {
   float: left;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   margin-right: 71px;
+}
+nav .nav .n_left li a:hover {
+  border-bottom: 2px solid #000;
 }
 nav .nav .n_right {
   float: right;
@@ -106,369 +136,120 @@ nav .nav .n_right input {
 nav .nav .n_right span {
   margin-left: -20px;
 }
-.banner {
+nav .down {
   width: 100%;
-}
-.banner a img {
-  width: 100%;
-  height: 100%;
-}
-.new {
-  width: 73.33%;
-  margin: 0 auto;
-}
-.new .content {
-  padding: 0 25px 0;
-  overflow: hidden;
-  position: relative;
-}
-.new .content ul {
-  overflow: hidden;
-  /**/
-}
-.new .content ul li {
-  width: 214px;
-  height: 399px;
-  padding: 10px;
-  float: left;
-}
-.new .content ul li .img {
-  height: 271px;
-  width: 100%;
-  padding: 30px 0 30px;
-  box-sizing: border-box;
-  background: #fff;
-}
-.new .content ul li .img img {
-  width: 210px;
-  height: 210px;
-}
-.new .content ul li .message {
-  padding: 29px auto 29px;
-}
-.new .content ul li .message img {
-  width: 60px;
-  height: 21px;
-  margin-left: 80px;
-}
-.new .content ul li .message p {
-  margin-top: 20px;
-  text-align: center;
-}
-.new .content ul li .message p:nth-of-type(1) {
-  font-size: 12px;
-}
-.new .content ul li .message p:nth-of-type(1) a {
-  color: #666;
-  margin-right: 5px;
-}
-.new .content ul li .message p:nth-of-type(2) {
-  font-size: 16px;
-  color: #333;
-  font-weight: bold;
-  position: relative;
-}
-.new .content ul li .message p:nth-of-type(2) span:nth-of-type(2) {
-  position: absolute;
-  right: 5px;
-  top: 2px;
-  color: #ccc;
-  display: none;
-}
-.new .content ul li:hover {
-  background: #F0F0F0;
-}
-.new .content ul li:hover p:nth-of-type(2):hover span:nth-of-type(2) {
-  display: block;
-}
-.new .content .btn {
-  float: left;
-  position: absolute;
-  font-size: 22px;
-  color: #333;
-}
-.new .content .btn:nth-of-type(1) {
-  top: 50%;
-  right: 0;
-}
-.new .content .btn:nth-of-type(2) {
-  top: 50%;
-  left: 0;
-}
-.recommend {
-  width: 73.33%;
-  margin: 0 auto;
-}
-.recommend .list {
-  width: 31.8%;
-  height: auto;
-  float: left;
-  margin-left: 15px;
-  margin-bottom: 70px;
-  position: relative;
-}
-.recommend .list .shade {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-}
-.recommend .list .shade img {
-  width: 96px;
-  height: 34px;
-  margin: 60% 38%;
-}
-.recommend .list:hover .shade {
-  display: block;
-}
-.recommend .brand {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.recommend .brand div {
-  width: 92%;
-  overflow: hidden;
-  margin: 0 auto 70px;
-}
-.recommend .brand div ul {
-  overflow: hidden;
-  width: 1200px;
-}
-.recommend .brand div ul li {
-  float: left;
-  width: 71px;
-  height: 34px;
-  margin: 0 10px;
-}
-.recommend .brand span {
-  position: absolute;
-  width: 18px;
-  height: 22px;
-  top: 5px;
-}
-.recommend .brand span:nth-of-type(1) {
-  left: 0;
-  background: #0062BC;
-}
-.recommend .brand span:nth-of-type(2) {
-  right: 0;
-  background: #0062BC;
-}
-.information {
-  width: 73.33%;
-  margin: 0 auto;
-}
-.information .title {
-  padding: 60px 0 40px;
-}
-.information .title h3 {
-  font-size: 42px;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #333333;
-}
-.information .title p {
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  color: #333333;
-}
-.information .list {
-  width: 31.8%;
-  height: auto;
-  float: left;
-  margin-bottom: 70px;
-  position: relative;
-  overflow: hidden;
-}
-.information .list .shade {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.1);
-  display: none;
-}
-.information .list p {
-  position: absolute;
-  width: 73px;
-  height: 73px;
-  background: rgba(255, 255, 255, 0.8);
-  left: 40%;
-  top: 25%;
-  border-radius: 50%;
-  display: none;
-}
-.information .list p span {
-  float: left;
-  width: 0;
   height: 0;
-  border-width: 27px;
-  border-style: solid;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
-  margin: 8px 0 0 27px;
-}
-.information .list2 {
-  margin: 0 20px 70px 20px;
-}
-.information .list:hover .shade {
-  display: block;
-}
-.information .list:hover p {
-  display: block;
-}
-.information .classify {
-  width: 100%;
-  overflow: hidden;
-}
-.information .classify a {
-  overflow: hidden;
-}
-.information .classify a .litile {
-  width: 23%;
-  height: auto;
-  float: left;
-  margin-right: 25px;
-  margin-bottom: 70px;
-  position: relative;
-}
-.information .classify a .litile .shade {
-  width: 100%;
-  height: 100%;
+  background: #fff;
+  border-bottom: 2px solid #000000;
   position: absolute;
   left: 0;
+  top: 219px;
+  z-index: 1000;
+  overflow: hidden;
+  transition: 0.5s;
+}
+nav .down .content {
+  margin: 34px 0 50px 7%;
+}
+nav .down .content .list {
+  float: left;
+  margin-right: 130px;
+}
+nav .down .content .list h4 {
+  font-size: 18px;
+  color: #000;
+  font-family: "黑体";
+  margin-bottom: 20px;
+}
+nav .down .content .list ul li {
+  margin-right: 30px;
+  float: left;
+}
+nav .down .content .list ul li a {
+  font-size: 13px;
+  color: #5b5b5a;
+  line-height: 35px;
+  font-weight: 600;
+}
+nav .nav-fixde {
+  width: 100%;
+  position: fixed;
+  background: #fff;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
   display: none;
+  border-bottom: 3px solid #000;
 }
-.information .classify a .litile p {
+nav .nav-fixde .nav {
+  width: 89%;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+}
+nav .nav-fixde .nav .img {
+  height: 38px;
+  width: 60px;
+  float: left;
+  margin-top: 5px;
+}
+nav .nav-fixde .nav .n_left {
+  float: left;
+  margin-left: 40px;
+}
+nav .nav-fixde .nav .n_left li {
+  float: left;
+  font-size: 21px;
+  font-weight: bold;
+  margin-right: 71px;
+}
+nav .nav-fixde .nav .n_right {
+  float: right;
+}
+nav .nav-fixde .nav .n_right input {
+  width: 180px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #333333;
+}
+nav .nav-fixde .nav .n_right span {
+  margin-left: -20px;
+}
+nav .nav-fixde .down-fixde {
+  width: 100%;
+  height: 0;
+  background: #fff;
+  border-bottom: 2px solid #000000;
   position: absolute;
-  font-size: 15px;
-  color: #fff;
-  left: 28%;
-  top: 50%;
-  display: none;
+  left: 0;
+  top: 52px;
+  z-index: 1000;
+  overflow: hidden;
+  transition: 0.5s;
 }
-.information .classify a .litile:hover .shade {
-  display: block;
+nav .nav-fixde .down-fixde .content-fixde {
+  margin: 34px 0 50px 7%;
 }
-.information .classify a .litile:hover p {
-  display: block;
+nav .nav-fixde .down-fixde .content-fixde .list {
+  float: left;
+  margin-right: 130px;
 }
-.information .classify a .litile4 {
-  margin-right: 0;
-}
-.information .video {
-  width: 100%;
-  height: 444px;
-  display: block;
+nav .nav-fixde .down-fixde .content-fixde .list h4 {
+  font-size: 18px;
+  color: #000;
+  font-family: "黑体";
   margin-bottom: 20px;
 }
-.information .classify1 {
-  width: 100%;
-  overflow: hidden;
-}
-.information .classify1 a {
-  overflow: hidden;
-}
-.information .classify1 a .litile {
-  width: 23%;
-  height: auto;
+nav .nav-fixde .down-fixde .content-fixde .list ul li {
+  margin-right: 30px;
   float: left;
-  margin-right: 25px;
-  margin-bottom: 20px;
-  position: relative;
 }
-.information .classify1 a .litile div p:nth-of-type(1) {
-  text-align: center;
-  font-size: 20px;
-  color: #3A3A3A;
-  padding-top: 5px;
-  font-family: "微软雅黑";
+nav .nav-fixde .down-fixde .content-fixde .list ul li a {
+  font-size: 13px;
+  color: #5b5b5a;
+  line-height: 35px;
+  font-weight: 600;
 }
-.information .classify1 a .litile div p:nth-of-type(2) {
-  text-align: center;
-  font-size: 12px;
-  color: #8e8e8e;
-  font-family: "微软雅黑";
-}
-.information .classify1 a .litile div p:nth-of-type(1):before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 1px;
-  background: #3A3A3A;
-  margin: 0px 10px 7px 0;
-}
-.information .classify1 a .litile div p:nth-of-type(1):after {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 1px;
-  background: #3A3A3A;
-  margin: 0px 0 7px 10px;
-}
-.information .classify1 a .litile:hover div {
-  background: #f0efed;
-}
-.information .classify1 a .litile4 {
-  margin-right: 0;
-}
-.information .classify2 {
-  width: 100%;
-  overflow: hidden;
-}
-.information .classify2 a {
-  overflow: hidden;
-}
-.information .classify2 a .litile {
-  width: 23%;
-  height: auto;
-  float: left;
-  margin-right: 25px;
-  margin-bottom: 100px;
-  position: relative;
-}
-.information .classify2 a .litile div p:nth-of-type(1) {
-  text-align: center;
-  font-size: 20px;
-  color: #3A3A3A;
-  padding-top: 5px;
-  font-family: "微软雅黑";
-}
-.information .classify2 a .litile div p:nth-of-type(2) {
-  text-align: center;
-  font-size: 12px;
-  color: #8e8e8e;
-  font-family: "微软雅黑";
-}
-.information .classify2 a .litile div p:nth-of-type(1):before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 1px;
-  background: #3A3A3A;
-  margin: 0px 10px 7px 0;
-}
-.information .classify2 a .litile div p:nth-of-type(1):after {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 1px;
-  background: #3A3A3A;
-  margin: 0px 0 7px 10px;
-}
-.information .classify2 a .litile:hover div {
-  background: #f0efed;
-}
-.information .classify2 a .litile4 {
-  margin-right: 0;
-}
+
 footer {
   width: 100%;
   background: #333;

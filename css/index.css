@@ -48,6 +48,30 @@ header .content .h_left {
 }
 header .content .h_left li {
   margin-right: 28px;
+  position: relative;
+}
+header .content .h_left li .img {
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+  border: 1px solid #CCCCCC;
+  display: none;
+}
+header .content .h_left li .img div {
+  padding: 8px;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+header .content .h_left li .img p {
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+header .content .h_left li:hover .img {
+  display: block;
 }
 header .content .h_right {
   float: right;
@@ -58,6 +82,8 @@ header .content .h_right li {
 nav {
   width: 100%;
   height: 218px;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative;
 }
 nav h1 {
   width: 100%;
@@ -91,12 +117,12 @@ nav .nav .n_left {
 }
 nav .nav .n_left li {
   float: left;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   margin-right: 71px;
 }
-nav .nav .n_left li:hover {
-	
+nav .nav .n_left li a:hover {
+  border-bottom: 2px solid #000;
 }
 nav .nav .n_right {
   float: right;
@@ -110,16 +136,40 @@ nav .nav .n_right input {
 nav .nav .n_right span {
   margin-left: -20px;
 }
-nav .nav .down {
-  width: 98vw;
-  height: 400px;
+nav .down {
+  width: 100%;
+  height: 0;
   background: #fff;
-  border: 1px solid #000000;
+  border-bottom: 2px solid #000000;
   position: absolute;
-  top: 49px;
-  left: -6%;
+  left: 0;
+  top: 219px;
   z-index: 1000;
-  display: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+nav .down .content {
+  margin: 34px 0 50px 7%;
+}
+nav .down .content .list {
+  float: left;
+  margin-right: 130px;
+}
+nav .down .content .list h4 {
+  font-size: 18px;
+  color: #000;
+  font-family: "黑体";
+  margin-bottom: 20px;
+}
+nav .down .content .list ul li {
+  margin-right: 30px;
+  float: left;
+}
+nav .down .content .list ul li a {
+  font-size: 13px;
+  color: #5b5b5a;
+  line-height: 35px;
+  font-weight: 600;
 }
 nav .nav-fixde {
   width: 100%;
@@ -128,20 +178,27 @@ nav .nav-fixde {
   top: 0;
   z-index: 1000;
   display: none;
+  border-bottom: 3px solid #000;
 }
 nav .nav-fixde .nav {
   width: 89%;
-  height: 49px;
+  height: 50px;
   margin: 0 auto;
-  line-height: 49px;
+  line-height: 50px;
+}
+nav .nav-fixde .nav .img {
+  height: 38px;
+  width: 60px;
+  float: left;
+  margin-top: 5px;
 }
 nav .nav-fixde .nav .n_left {
   float: left;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 nav .nav-fixde .nav .n_left li {
   float: left;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   margin-right: 71px;
 }
@@ -156,6 +213,41 @@ nav .nav-fixde .nav .n_right input {
 }
 nav .nav-fixde .nav .n_right span {
   margin-left: -20px;
+}
+nav .nav-fixde .down-fixde {
+  width: 100%;
+  height: 0;
+  background: #fff;
+  border-bottom: 2px solid #000000;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  z-index: 1000;
+  overflow: hidden;
+  transition: 0.5s;
+}
+nav .nav-fixde .down-fixde .content-fixde {
+  margin: 34px 0 50px 7%;
+}
+nav .nav-fixde .down-fixde .content-fixde .list {
+  float: left;
+  margin-right: 130px;
+}
+nav .nav-fixde .down-fixde .content-fixde .list h4 {
+  font-size: 18px;
+  color: #000;
+  font-family: "黑体";
+  margin-bottom: 20px;
+}
+nav .nav-fixde .down-fixde .content-fixde .list ul li {
+  margin-right: 30px;
+  float: left;
+}
+nav .nav-fixde .down-fixde .content-fixde .list ul li a {
+  font-size: 13px;
+  color: #5b5b5a;
+  line-height: 35px;
+  font-weight: 600;
 }
 .banner {
   width: 100%;
@@ -400,6 +492,11 @@ nav .nav-fixde .nav .n_right span {
 }
 .information .list:hover p {
   display: block;
+}
+.information video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 .information .classify {
   width: 100%;

@@ -6,7 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
-		
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 	</head>
 	<body>
 		<div class="last">
@@ -16,9 +17,21 @@
 					<ul class="h_left">
 						<li>
 							<a href="">关注</a>
+							<div class="img">
+								<div>
+									<img src="img/footer6.jpg" alt="">
+								</div>
+								<p>关注公众号</p>
+							</div>
 						</li>
 						<li>
 							<a href="">下载app</a>
+							<div class="img">
+								<div>
+									<img src="img/footer5.png" alt="">
+								</div>
+								<p>下载优购APP</p>
+							</div>
 						</li>
 					</ul>
 					<ul class="h_right">
@@ -83,10 +96,13 @@
 						<input type="" name="" id="" value="" />
 						<span class="iconfont icon-fangdajing"></span>
 					</div>
-					<div class="down" id="down"></div>
+					
 				</div>
 				<div class="nav-fixde" id="nav-fixde">
 					<div class="nav">
+						<div class="img">
+							<img src="img/logo.png">
+						</div>
 						<ul class="n_left">
 							<li>
 								<a href="">首页</a>
@@ -115,25 +131,23 @@
 							<span class="iconfont icon-fangdajing"></span>
 						</div>
 					</div>
+					<div class="down-fixde" id="down-fixde">
+						<div class="content-fixde" id="content-fixde">
+						
+						</div>
+					</div>
 				</div>
+			    <div class="down" id="down">
+					<div class="content" id="content">
+					
+					</div>
+			    </div>
 			</nav>
 			<!-- banner -->
 			<div class="banner" id="banner">
 				<a href="#" id="A">
 					<img src="img/banner1.jpg" id="Img">
 				</a>
-				<!-- <ul>
-					<li>
-						<a href="">
-							<img src="img/banner1.jpg" >
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="img/banner2.jpg" >
-						</a>
-					</li>
-				</ul> -->
 				<span ></span>
 				<span class="action"></span>
 			</div>
@@ -438,27 +452,80 @@
 						<ul>
 							<h5>新手帮助</h5>
 							<li>
-								<a href="">交易条款协议</a>
+								<a href="https://www.yougou.com/help/agreement.shtml">交易条款协议</a>
 							</li>
 							<li>
-							    <a href="">注册新用户</a>
+							    <a href="https://www.yougou.com/help/agreement.shtml">注册新用户</a>
 							</li>
 							<li>
-							    <a href="">会员积分详情</a>
+							    <a href="https://www.yougou.com/help/agreement.shtml">会员积分详情</a>
 							</li>
 						</ul>
 					</div>
 					<div class="list">
 						<ul>
-							<h5>新手帮助</h5>
+							<h5>购物指南</h5>
 							<li>
-								<a href="">交易条款协议</a>
+								<a href="https://www.yougou.com/help/agreement.shtml">订购流程</a>
 							</li>
 							<li>
-							    <a href="">注册新用户</a>
+							    <a href="https://www.yougou.com/help/agreement.shtml">验货与签收</a>
 							</li>
 							<li>
-							    <a href="">会员积分详情</a>
+							    <a href="https://www.yougou.com/help/agreement.shtml">订单配送</a>
+							</li>
+						</ul>
+					</div>
+					<div class="list">
+						<ul>
+							<h5>支付/配送</h5>
+							<li>
+								<a href="https://www.yougou.com/help/agreement.shtml">支付方式</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">配送方式</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">配送时间及运费</a>
+							</li>
+						</ul>
+					</div>
+					<div class="list">
+						<ul>
+							<h5>售后服务</h5>
+							<li>
+								<a href="https://www.yougou.com/help/agreement.shtml">退换货政策</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">退款说明</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">发票制度</a>
+							</li>
+						</ul>
+					</div>
+					<div class="list">
+						<ul>
+							<h5>会员服务</h5>
+							<li>
+								<a href="https://www.yougou.com/help/agreement.shtml">找回密码</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">联系我们</a>
+							</li>
+						</ul>
+					</div>
+					<div class="list">
+						<ul>
+							<h5>优购客服</h5>
+							<li>
+								<a href="https://www.yougou.com/help/agreement.shtml">在线咨询</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">Email: ygservice@belle.com.cn</a>
+							</li>
+							<li>
+							    <a href="https://www.yougou.com/help/agreement.shtml">微信客服：优购时尚商城</a>
 							</li>
 						</ul>
 					</div>
@@ -570,13 +637,72 @@
 		//导航栏数据渲染
 		var lis = nav.getElementsByTagName('li');
 		var down = document.getElementById('down');
-		nav.onmouseenter = function(){
-			down.style.display = 'block';
+		var content = document.getElementById('content');
+		Down(lis,down,content);
+		//固定导航栏数据渲染
+		
+		var lisfixde = navfixde.getElementsByTagName('li');
+		var downfixde = document.getElementById('down-fixde');
+		var contentfixde = document.getElementById('content-fixde');
+		Down(lisfixde,downfixde,contentfixde);
+		
+		
+		/* 用途:用于导航页数据渲染及动画效果
+		lis：鼠标移入产生效果的li标签集
+		down:展示出来的部分,
+		content:展示部分的子标签 */
+		function Down(lis,down,content){
+			Array.from(lis).forEach(function(el,i){
+				
+			    lis[i].onmouseenter = function(){
+					content.innerHTML = '';
+					if(i==0){
+						return;
+					}
+					var dataList = Data[i-1].list;
+					
+					
+					dataList.forEach(function(el,i){
+						//生成list
+						var list = document.createElement('div');
+					    list.className = 'list';
+						//生成li
+						var dataLi = dataList[i].classify;
+						var ul = document.createElement('ul');
+						var str = '';
+						dataLi.forEach(function(el,i){
+							
+							str += '<li>'+
+										'<dl>';
+							for(var j=0;j<dataLi[i].length;j++){
+								       str +=  '<dt><a href="">'+ dataLi[i][j].title +'</a></dt>';
+								         //console.log(str);
+							          }			
+							str +=	'</dl>'+
+									  '</li>';
+									 
+							
+						})
+						ul.innerHTML = str;
+						list.innerHTML = `<h4>${dataList[i].title}</h4>`;
+						list.appendChild(ul);
+						content.appendChild(list);
+					})
+					down.style.height = '340px';
+					down.onmouseenter = function(){
+						down.style.height = '340px';
+						//alert()
+					}
+					down.onmouseleave = function(){
+						down.style.height = '0';
+					}
+				}
+				lis[i].onmouseleave = function(){
+					down.style.height = '0px';
+				}
+			})
 		}
-		nav.onmouseleave = function(){
-			down.style.display = 'none';
-		}
-		console.log(lis);
+		
 	  </script>
 	</body>
 	</body>

@@ -30,7 +30,10 @@ down:展示出来的部分,
 content:展示部分的子标签 */
 function Down(lis,down,content){
 	Array.from(lis).forEach(function(el,i){
-		
+		lis[i].onclick = function(){
+			var data = Data[i-1];
+			lis[i].children[0].href = 'nav.html?'+ data.title;
+		}
 		lis[i].onmouseenter = function(){
 			content.innerHTML = '';
 			if(i==0){
@@ -71,7 +74,7 @@ function Down(lis,down,content){
 				//alert()
 			}
 			down.onmouseleave = function(){
-				down.style.height = '0';
+				down.style.height = '0px';
 			}
 		}
 		lis[i].onmouseleave = function(){

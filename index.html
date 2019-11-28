@@ -653,7 +653,10 @@
 		content:展示部分的子标签 */
 		function Down(lis,down,content){
 			Array.from(lis).forEach(function(el,i){
-				
+				lis[i].onclick = function(){
+					var data = Data[i-1];
+					lis[i].children[0].href = 'nav.html?name='+ data.name;
+				}
 			    lis[i].onmouseenter = function(){
 					content.innerHTML = '';
 					if(i==0){

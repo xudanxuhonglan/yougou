@@ -1,3 +1,6 @@
+.last{
+	width: 100%;
+}
 .title {
   padding: 70px 0 40px;
   overflow: hidden;
@@ -19,6 +22,9 @@
 }
 .title h5:nth-of-type(2) {
   margin-left: 24px;
+}
+.last{
+	
 }
 header {
   height: 40px;

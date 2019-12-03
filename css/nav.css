@@ -13,16 +13,28 @@
 .commodity {
   width: 89%;
   margin: 0 auto;
+  overflow: hidden;
 }
-.commodity .left {
+.commodity .commodity-left {
+  float: left;
   width: 15%;
 }
-.commodity .left p {
+.commodity .commodity-left p {
   color: #666;
   font-size: 12px;
   line-height: 63px;
 }
-.commodity .left ul li {
+.commodity .commodity-left .content {
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+}
+.commodity .commodity-left .content ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.commodity .commodity-left .content ul li {
   color: #242424;
   font-size: 12px;
   font-weight: bold;
@@ -30,7 +42,7 @@
   position: relative;
   margin-top: 12px;
 }
-.commodity .left ul li .left {
+.commodity .commodity-left .content ul li .left {
   display: inline-block;
   position: absolute;
   top: 3px;
@@ -38,7 +50,7 @@
   border: 5px solid #000;
   border-color: transparent transparent transparent #000;
 }
-.commodity .left ul li .top {
+.commodity .commodity-left .content ul li .top {
   display: inline-block;
   position: absolute;
   top: 6px;
@@ -46,14 +58,14 @@
   border: 5px solid #000;
   border-color: #000 transparent transparent transparent;
 }
-.commodity .left ul li dl {
+.commodity .commodity-left .content ul li dl {
   display: none;
 }
-.commodity .left ul li dl dt {
+.commodity .commodity-left .content ul li dl dt {
   margin-top: 10px;
   width: 100%;
 }
-.commodity .left ul li dl dt a {
+.commodity .commodity-left .content ul li dl dt a {
   width: 80%;
   line-height: 22px;
   font-size: 12px;
@@ -62,6 +74,228 @@
   font-weight: normal;
   display: inline-block;
 }
-.commodity .left ul li dl dt a:hover {
+.commodity .commodity-left .content ul li dl dt a:hover {
   font-weight: bold;
+}
+.commodity .commodity-left .content .scroll {
+  width: 8px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+}
+.commodity .commodity-left .content .scroll .block {
+  width: 10px;
+  height: 50px;
+  background: #eee;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.commodity .commodity-left1 {
+  position: fixed;
+  top: 55px;
+  left: 6%;
+  float: left;
+  width: 15%;
+}
+.commodity .commodity-left1 p {
+  color: #666;
+  font-size: 12px;
+  line-height: 63px;
+}
+.commodity .commodity-left1 .content {
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+}
+.commodity .commodity-left1 .content ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.commodity .commodity-left1 .content ul li {
+  color: #242424;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 15px;
+  position: relative;
+  margin-top: 12px;
+}
+.commodity .commodity-left1 .content ul li .left {
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  border: 5px solid #000;
+  border-color: transparent transparent transparent #000;
+}
+.commodity .commodity-left1 .content ul li .top {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  border: 5px solid #000;
+  border-color: #000 transparent transparent transparent;
+}
+.commodity .commodity-left1 .content ul li dl {
+  display: none;
+}
+.commodity .commodity-left1 .content ul li dl dt {
+  margin-top: 10px;
+  width: 100%;
+}
+.commodity .commodity-left1 .content ul li dl dt a {
+  width: 80%;
+  line-height: 22px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 20px;
+  font-weight: normal;
+  display: inline-block;
+}
+.commodity .commodity-left1 .content ul li dl dt a:hover {
+  font-weight: bold;
+}
+.commodity .commodity-left1 .content .scroll {
+  width: 8px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+}
+.commodity .commodity-left1 .content .scroll .block {
+  width: 10px;
+  height: 50px;
+  background: #eee;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.commodity .commodity-right {
+  width: 84%;
+  float: right;
+  text-align: center;
+}
+.commodity .commodity-right .content .top {
+  overflow: hidden;
+  padding: 0 32px 0 32px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 28px;
+}
+.commodity .commodity-right .content .top ul {
+  float: left;
+}
+.commodity .commodity-right .content .top ul li {
+  margin-right: 59px;
+  float: left;
+  line-height: 50px;
+}
+.commodity .commodity-right .content .top ul li a {
+  color: #333;
+  font-size: 14px;
+}
+.commodity .commodity-right .content .top ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
+.commodity .commodity-right .content .top p {
+  float: right;
+  line-height: 50px;
+  color: #999;
+  font-size: 12px;
+}
+.commodity .commodity-right .content .top p a {
+  color: #999;
+  font-size: 12px;
+}
+.commodity .commodity-right .content .goods ul li {
+  width: 232px;
+  padding: 10px;
+  float: left;
+}
+.commodity .commodity-right .content .goods ul li a .img {
+  width: 100%;
+  height: 290px;
+  padding: 37px 0 37px 0 ;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+.commodity .commodity-right .content .goods ul li a .text {
+  padding: 15px 10px 25px;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(1) {
+  color: #333;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(2) {
+  margin-top: 13px;
+  font-weight: bold;
+  position: relative;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(2) i {
+  color: #333;
+  font-style: normal;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(2) i span {
+  font-size: 16px;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(2) em {
+  color: #ccc;
+  font-style: normal;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(2) em span {
+  font-size: 16px;
+}
+.commodity .commodity-right .content .goods ul li a .text p:nth-of-type(2) b {
+  position: absolute;
+  color: #999999;
+  font-size: 20px;
+  display: none;
+  top: 0;
+  right: 0;
+}
+.commodity .commodity-right .content .goods ul li:hover {
+  background: #f6f6f6;
+}
+.commodity .commodity-right .content .goods ul li:hover .heart {
+  display: block;
+}
+.commodity .commodity-right .content .page {
+  float: right;
+  padding: 40px 0 50px;
+  clear: both;
+}
+.commodity .commodity-right .content .page .action {
+  background: #000000;
+  color: #fff;
+}
+.commodity .commodity-right .content .page a {
+  padding: 0 10px;
+  line-height: 27px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.commodity .commodity-right .content .page a:nth-of-type(1) {
+  margin-left: 10px;
+}
+.commodity .commodity-right .content .page button {
+  background: #fff;
+  font-size: 16px;
+  color: 16px;
+  position: relative;
+  top: -7px;
 }

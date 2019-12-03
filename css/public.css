@@ -259,6 +259,7 @@ nav .nav-fixde .down-fixde .content-fixde .list ul li a {
 footer {
   width: 100%;
   background: #333;
+  clear: both;
 }
 footer .top {
   width: 100%;

@@ -32,7 +32,7 @@ function Down(lis,down,content){
 	Array.from(lis).forEach(function(el,i){
 		lis[i].onclick = function(){
 			var data = Data[i-1];
-			lis[i].children[0].href = 'nav.html?'+ data.title;
+			lis[i].children[0].href = 'nav.html?name='+ data.name;
 		}
 		lis[i].onmouseenter = function(){
 			content.innerHTML = '';
@@ -74,7 +74,7 @@ function Down(lis,down,content){
 				//alert()
 			}
 			down.onmouseleave = function(){
-				down.style.height = '0px';
+				down.style.height = '0';
 			}
 		}
 		lis[i].onmouseleave = function(){

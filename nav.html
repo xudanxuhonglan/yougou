@@ -2,7 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<mata name="keywords" content="优购网,优购时尚商城,优购网上鞋城"></mata>
+		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
+		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
+		<link rel="Shortcut Icon" href="img/title.png">
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
@@ -152,57 +155,59 @@
 			</div>
 			<!-- 商品内容 -->
 		    <div class="commodity">
-				<div class="left" id="left">
+				<div class="commodity-left" id="left">
 					<p>共 ><span>1256</span>个结果</p>
-					<ul>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>品牌
-								<dl>
-									<dt><a href="">百丽</a></dt>
-									<dt><a href="">天美意</a></dt>
-									<dt><a href="">她他</a></dt>
-									<dt><a href="">百思图</a></dt>
-								</dl>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>品类
-							</a>
+					<div class="content" id="content1">
+						<ul>
+						
+					    </ul>
+						<div class="scroll" id="scroll">
+							<div class="block"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="commodity-left1" id="left1">
+					<p>共 ><span>1256</span>个结果</p>
+					<div class="content" id="content2">
+						<ul>
+						
+					    </ul>
+						<div class="scroll" id="scroll1">
+							<div class="block"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="commodity-right">
+					<div class="content">
+						<div class="top">
+							<ul>
+								<li><a href="">新品</a></li>
+								<li><a href="">热销</a></li>
+								<li><a href="">推荐</a></li>
+								<li><a href="">价格</a></li>
+								<li><a href="">折扣</a></li>
+							</ul>
+							<p><span>1</span>-<span>333</span>页/<a href="">下一页&gt;</a></p>
+						</div>
+						<div class="goods" id="goods">
+							<ul>
+								
+							</ul>
+						</div>
+						<div class="page" id="page">
+							<button>&lt;上一页</button>
+							<span id="fy">
+								<!-- <a href="" class="action">1</a>
+							<a href="">2</a> -->
+							</span>
 							
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>价格
-							</a>
 							
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>尺码
-							</a>
-							
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>颜色
-							</a>
-							
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>款式季节
-							</a>
-							
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="left"></i>风格
-							</a>
-							
-						</li>
-					</ul>
+							<button href="">下一页&gt;</button>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 			<footer>
@@ -379,33 +384,252 @@
 			</footer>
 		</div>
 	    <script type="text/javascript">
-			//副级导航
+			
 	    	var smallNav = document.getElementById('smallNav');
 			var search = window.location.search.split('=')[1];
-			for(var i=0;i<Data.length;i++){
-				if(Data[i].name == search){
-					smallNav.children[0].innerHTML = '首页 > '+ Data[i].title;
-				}
-			}
+			
 			//商品左侧
-			var left = document.getElementById('left');
-			var lis = left.getElementsByTagName('li');
-			//console.log(lis)
-			//数据渲染
+			//left('left','content1','scroll');
+			//滚动后才出现的左侧栏
+			// left('left1','content2','scroll1');
 			
-			
-			
-			for(var i=0;i<lis.length;i++){
-				lis[i].onclick = function(){
-					var i = this.getElementsByTagName('i')[0];
-					var iClass = i.className;
-					if(iClass == 'left'){
-						i.className = 'top';
-					}else if(iClass == 'top'){
-						i.className = 'left';
+			function left(left,content1,scroll){
+				var left = document.getElementById('left');
+				var lis = left.getElementsByTagName('li');
+				var ul = left.getElementsByTagName('ul')[0];
+				for(var i=0;i<Data.length;i++){
+					if(Data[i].name == search){
+						//副级导航
+						smallNav.children[0].innerHTML = '首页 > '+ Data[i].title;
+						//数据渲染
+						var data = Data[i].msg;
+						for(var i=0;i<data.length;i++){
+							var li = document.createElement('li');
+						    li.innerHTML = '<a href="javascript:;"><i class="left"></i>'+data[i].title+'</a>';
+							var str = '';
+							//console.log(data[i].content);
+							str += '<a href="javascript:;"><i class="left"></i>'+data[i].title+'</a><dl>';
+							for(var j=0;j<data[i].content.length;j++){
+								str += '<dt><a href="">'+ data[i].content[j] +'</a></dt>';
+							}
+							str += '</dl>';
+							li.innerHTML = str;
+							ul.appendChild(li)
+						}
+						
+					}
+					
+				}
+				//侧边栏点击(下拉列表及滚动条)
+				var content1 = document.getElementById('content1');
+				var Fheight = ul.offsetHeight;
+				var scroll = document.getElementById('scroll');
+				scroll.style.height = content1.offsetHeight + 'px';
+				for(var i=0;i<lis.length;i++){
+					lis[i].onclick = function(){
+						var i = this.getElementsByTagName('i')[0];
+						var dl = this.getElementsByTagName('dl')[0];
+						var iClass = i.className;
+						if(iClass == 'left'){
+							i.className = 'top';
+							dl.style.display = 'block';
+						}else if(iClass == 'top'){
+							i.className = 'left';
+							dl.style.display = 'none';
+						}
+						
+						var Cheight = content1.offsetHeight;
+						var Uheight = ul.offsetHeight;
+						
+						if(Uheight>Cheight){
+							scroll.style.display = 'block';
+							
+						}else{
+							scroll.style.display = 'none';
+						}
+						
 					}
 				}
+				//滚动条
+				
+					var block = scroll.getElementsByTagName('div')[0];
+					var num = 0;
+					var ulHei = ul.offsetHeight;
+					//拖动
+					block.onmousedown = function(event){
+						event = event || window.event;
+						var mousey =  event.pageY;
+						var blky = block.offsetTop;
+						var scrollH = scroll.offsetHeight-50;
+						document.onmousemove = function(event){
+							var Mmousey =  event.pageY;
+							var H = (Mmousey-mousey)+blky
+							if(H<0){
+								H = 0;
+							}else if(H>scrollH){
+								H = scrollH;
+							}
+							block.style.top = H + 'px';
+							num = H;
+							BL = H/scrollH;
+							var ulH = ul.offsetHeight - ulHei;
+							ul.style.top = -BL*ulH + 'px';
+					        
+						}
+					}
+					document.onmouseup = function(){
+							document.onmousemove = '';
+					}
+					
+					//滚轮
+					content1.addEventListener('wheel',function(event){
+						event.preventDefault();
+						var scrollH = scroll.offsetHeight-50;
+						
+						if(event.wheelDelta>0){
+							//向上滚动
+							num -= 10;
+							if(num<0){
+								num = 0;
+							}else if(num>scrollH){
+								num = scrollH;
+							}
+							block.style.top = num + 'px';
+						}else{
+							//向下滚动
+							num += 10;
+							if(num<0){
+								num = 0;
+							}else if(num>scrollH){
+								num = scrollH;
+							}
+							block.style.top = num + 'px';
+						}
+						var BL = num/scrollH;
+						var ulH = ul.offsetHeight - ulHei;
+						ul.style.top = -BL*ulH + 'px';
+						
+					});
 			}
+			
+			left('left1','content2','scroll1');
+			
+			
+			
+			//移入商品时小星星出现
+			var goods = document.getElementById('goods');
+			var goods_lis = goods.getElementsByTagName('li');
+			for(var i=0;i<goods_lis.length;i++){
+				goods_lis[i].onmouseenter = function(){
+					var b = this.getElementsByTagName('b')[0];
+					b.style.display = 'block';
+				}
+				goods_lis[i].onmouseleave = function(){
+					var b = this.getElementsByTagName('b')[0];
+					b.style.display = 'none';
+				}
+			}
+			
+			
+			//右侧渲染
+			var page_ul = goods.getElementsByTagName('ul')[0]; 
+			var data_arr = [];
+			
+			for(var i=0;i<Data.length;i++){
+				if(Data[i].name == search){
+			       for(var k=0;k<Data[i].list.length;k++){
+					      //拿到每一个分类里的商品列表
+			         	  if(k==0){
+			         		//品牌
+			         		var classify1 = Data[i].list[k].classify;
+			         		for(var j=0;j<classify1.length;j++){
+			         			for(var arr in classify1[j]){
+			         				var commodity1 = classify1[j][arr].commodity;
+									//console.log(commodity1);
+			         			}
+			         		}
+			         	}else{
+			         		//非品牌
+			         		var classify = Data[i].list[k].classify;
+			         		for(var j=0;j<classify.length;j++){
+			         			for(var arr in classify[j]){
+			         				var commodity = classify[j][arr].commodity;
+									
+									for(var n=0;n<commodity.length;n++){
+										//数组里面有数据就push到data_arr
+										if(commodity[n].img){
+										
+												data_arr.push(commodity[n]);
+											
+										}
+									}
+			         				
+			         			}
+			         		}
+			         	}
+			         }
+				
+				} 
+			}
+			
+			
+			var page = document.getElementById('page');
+			var fy = document.getElementById('fy');
+			//渲染分页器
+			var pageMath = Math.ceil(data_arr.length/16) ;
+			var math = 1;
+			var pg = '';
+			while(math<=pageMath){
+				//alert()
+				pg += '<a href="javascript:;">'+math+'</a>';
+				math++
+			}
+			fy.innerHTML = pg;
+			//渲染商品
+			setPage(1);
+			var page_oA = fy.getElementsByTagName('a');
+			 for(var i=0;i<page_oA.length;i++){
+			  	if(i==0){
+			  		page_oA[i].className = 'action';
+			  	}
+				page_oA[i].onclick = function(){
+					for(var i=0;i<page_oA.length;i++){
+						page_oA[i].className = '';
+					}
+					this.className = 'action';
+					var pageNum = this.innerHTML;
+					setPage(pageNum)
+					
+				}
+			}
+			console.log(page_oA.length);
+			//封装页面渲染函数
+			function setPage(page){
+				var page_str =  '';
+				page_ul.innerHTML = '';
+				for(var i=0;i<data_arr.length;i++){
+					if(i>=(16-1)*(page-1)&&i<=(16-1)*(page-1)+15){
+						page_str += `<li>
+									<a href="">
+										<div class="img">
+											<img src="${data_arr[i].img}" alt="">
+										</div>
+										<div class="text">
+											<p>${data_arr[i].miaoshu}</p>
+											<p>
+												<i>&#165;&nbsp;<span>${data_arr[i].xianjia}</span></i>
+												<em>&#165;&nbsp;<span>${data_arr[i].yuanjia}</span></em>
+												<b>&#10084;</b>
+											</p>
+										</div>
+									</a>
+								</li>`;
+					}
+				}
+				page_ul.innerHTML = page_str;
+			}
+				
+			
 	    </script>
 	</body>
 </html>

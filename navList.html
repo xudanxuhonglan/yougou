@@ -6,8 +6,9 @@
 		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
 		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
 		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/navList.css"/>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/jquery.js" defer></script>
@@ -386,7 +387,8 @@
 			
 	    	var smallNav = document.getElementById('smallNav');
 			var search = window.location.search.split('=')[1];
-			console.log(search);
+			var hash = window.location.hash.split('#')[1];
+			console.log(hash);
 			//商品左侧
 			left('left','content1','scroll');
 			//滚动后才出现的左侧栏
@@ -551,22 +553,36 @@
 				if(Data[i].name == search){
 			       for(var k=0;k<Data[i].list.length;k++){
 					      //拿到每一个分类里的商品列表
-			         		
+			         	  if(k==0){
+			         		//品牌
+			         		var classify1 = Data[i].list[k].classify;
+			         		for(var j=0;j<classify1.length;j++){
+			         			for(var arr in classify1[j]){
+			         				var commodity1 = classify1[j][arr].commodity;
+									//console.log(commodity1);
+			         			}
+			         		}
+			         	}else{
+			         		//非品牌
 			         		var classify = Data[i].list[k].classify;
 			         		for(var j=0;j<classify.length;j++){
 			         			for(var arr in classify[j]){
-			         				var commodity = classify[j][arr].commodity;
-									
-									for(var n=0;n<commodity.length;n++){
-										//数组里面有数据就push到data_arr
-										if(commodity[n].img){
-											data_arr.push(commodity[n]);
+									var page = classify[j][arr].page;
+									if(page == hash){
+										var commodity = classify[j][arr].commodity;
+										for(var n=0;n<commodity.length;n++){
+											//数组里面有数据就push到data_arr
+											if(commodity[n].img){
+											
+													data_arr.push(commodity[n]);
+												
+											}
 										}
 									}
-			         				
+									
 			         			}
 			         		}
-			    
+			         	}
 			         }
 				
 				} 
@@ -598,7 +614,7 @@
 					}
 					this.className = 'action';
 					var pageNum = this.innerHTML;
-					setPage(pageNum)
+					setPage(pageNum);
 					
 				}
 			}

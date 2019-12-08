@@ -6,8 +6,9 @@
 		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
 		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
 		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/brand.css"/>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/jquery.js" defer></script>
@@ -179,6 +180,13 @@
 				</div>
 				<div class="commodity-right">
 					<div class="content">
+						<div class="brand" id="brand">
+							<!-- <div class="logo">
+								<img src="http:////i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-belle.png" alt=""><span>百丽</span>
+							</div>
+							<img src="//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/bai_li_.jpg" alt="">
+							<p>BeLLE（百丽），百变所以美丽。主张多变多元的新生代态度，不断融合潮流趋势，拥抱不同的生活体验与生活经历。将女性的百变魅力注入到鞋履设计中，让女人在不同的人生阶段，不同的场合，不同的潮流趋势下，尽显自己自信的一面。致力于为现代都市女性提供充满自由的行走体验。</p> -->
+						</div>
 						<div class="top">
 							<ul>
 								<li><a href="">新品</a></li>
@@ -386,7 +394,7 @@
 			
 	    	var smallNav = document.getElementById('smallNav');
 			var search = window.location.search.split('=')[1];
-			console.log(search);
+			var hash = window.location.hash.split('#')[1];
 			//商品左侧
 			left('left','content1','scroll');
 			//滚动后才出现的左侧栏
@@ -550,28 +558,35 @@
 			for(var i=0;i<Data.length;i++){
 				if(Data[i].name == search){
 			       for(var k=0;k<Data[i].list.length;k++){
-					      //拿到每一个分类里的商品列表
-			         		
-			         		var classify = Data[i].list[k].classify;
-			         		for(var j=0;j<classify.length;j++){
-			         			for(var arr in classify[j]){
-			         				var commodity = classify[j][arr].commodity;
-									
+					    //拿到每一个分类里的商品列表
+						var classify = Data[i].list[k].classify;
+						for(var j=0;j<classify.length;j++){
+							for(var arr in classify[j]){
+								var page = classify[j][arr].page;
+								if(page == hash){
+									var commodity = classify[j][arr].commodity;
+									//渲染品牌信息
+									var brand = document.getElementById('brand');
+									brand.innerHTML = `<div class="logo">
+															<img src="${classify[j][arr].logo}" alt=""><span>${classify[j][arr].title}</span>
+														</div>
+														<img src="${classify[j][arr].img}" alt="">
+														<p>${classify[j][arr].introduce}</p>`;
 									for(var n=0;n<commodity.length;n++){
 										//数组里面有数据就push到data_arr
 										if(commodity[n].img){
 											data_arr.push(commodity[n]);
 										}
 									}
-			         				
-			         			}
-			         		}
-			    
+								}
+							}
+						}
+
 			         }
 				
 				} 
 			}
-			console.log(data_arr);
+			
 			
 			var page = document.getElementById('page');
 			var fy = document.getElementById('fy');

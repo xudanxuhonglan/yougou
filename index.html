@@ -38,9 +38,9 @@
 						</li>
 					</ul>
 					<ul class="h_right">
-						<li>
-							<a href="">登录 /</a>
-							<a href=""> 注册</a>
+						<li id="login">
+							<!-- <a href="reg.html">登录 /</a>
+							<a href="login.html"> 注册</a> -->
 						</li>
 						<li>
 							<a href="">
@@ -48,14 +48,14 @@
 								收藏
 							</a>
 						</li>
-						<li>
-							<a href="">
+						<li id="shop">
+							<!-- <a href="javascript:;">
 								<span class="iconfont icon-gouwudai"></span>
 								购物袋
-							</a>
+							</a> -->
 						</li>
 						<li>
-							<a href="">
+							<a href="javascript:;">
 								公告
 							</a>
 						</li>
@@ -602,8 +602,9 @@
 				</div>
 			</footer>
 		</div>
-	
+	<script type="text/javascript" src="js/public.js"></script>
 	<script> 
+	    
 	    //轮播图
 		var Img_arr = ['img/banner1.jpg','img/banner2.jpg'];
 		var A_arr = ['#','#'];
@@ -681,7 +682,7 @@
 							str += '<li>'+
 										'<dl>';
 							for(var j=0;j<dataLi[i].length;j++){
-								       str +=  '<dt><a href="">'+ dataLi[i][j].title +'</a></dt>';
+								       str +=  '<dt><a href="'+ dataLi[i][j].link +'" target="_blank">'+ dataLi[i][j].title +'</a></dt>';
 								         //console.log(str);
 							          }			
 							str +=	'</dl>'+

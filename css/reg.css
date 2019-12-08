@@ -1,0 +1,270 @@
+@keyframes warn {
+  0% {
+    box-shadow: none;
+  }
+  40% {
+    box-shadow: 1px 1px 3px #ff0000, -1px -1px 3px #ff0000;
+  }
+  80% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 1px 1px 3px #ff0000, -1px -1px 3px #ff0000;
+  }
+}
+.last nav {
+  height: 70px !important;
+  background: #fff;
+}
+.last nav div {
+  width: 1190px !important;
+  height: 100%;
+  margin: 0 auto;
+}
+.last nav div h1 {
+  float: left!important;
+  height: 100%!important;
+  width: 177px;
+  margin: 0 30px 0 65px;
+}
+.last nav div h1 a {
+  width: 100%;
+  height: 100%;
+}
+.last nav div p {
+  float: left;
+  line-height: 42px;
+  font-size: 17px;
+  color: #8E8E8E;
+  margin-top: 15px;
+  padding-left: 29px;
+  border-left: 1px solid #f7f7f7;
+}
+.last .login {
+  height: 554px;
+  width: 100%;
+  background: url(../img/login/bg.jpg) -300px;
+  position: relative;
+}
+.last .login .box {
+  width: 378px;
+  height: 450px;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: 787px;
+  padding: 25px 15px;
+  box-sizing: border-box;
+}
+.last .login .box .change {
+  overflow: hidden;
+}
+.last .login .box .change button {
+  float: left;
+  width: 173px;
+  height: 41px;
+}
+.last .login .box .change .action {
+  background: #333333;
+  color: #fff;
+}
+.last .login .box .account form {
+  width: 100%;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+.last .login .box .account form label {
+  position: relative;
+}
+.last .login .box .account form label span {
+  display: inline-block;
+  top: -6px;
+  width: 44px;
+  height: 36px;
+  position: absolute;
+}
+.last .login .box .account form label span:nth-of-type(1) {
+  background: url(../img/login/icon.png) -166px -28px;
+}
+.last .login .box .account form label span:nth-of-type(2) {
+  background: url(../img/login/icon.png) -166px -57px;
+}
+.last .login .box .account form label input {
+  padding-left: 75px;
+  box-sizing: border-box;
+  margin-top: 31px;
+  width: 100%;
+  line-height: 37px;
+  border: 1px solid #f6f5f5;
+}
+.last .login .box .account form label:nth-of-type(1) span {
+  background: url(../img/login/icon.png) -166px -28px;
+}
+.last .login .box .account form label:nth-of-type(2) input {
+  margin-bottom: 36px;
+}
+.last .login .box .account form label:nth-of-type(2) span {
+  background: url(../img/login/icon.png) -166px -60px;
+}
+.last .login .box .account form a {
+  font-size: 12px;
+  color: #9ea2aa;
+  margin-left: 251px;
+  text-decoration: underline;
+}
+.last .login .box .account form button {
+  width: 312px;
+  height: 40px;
+  margin: 0 auto;
+  background: #333333;
+}
+.last .login .box .account form button a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none!important;
+  margin: 0 auto!important;
+}
+.last .login .box .account .three {
+  width: 100%;
+  margin-top: 12px;
+}
+.last .login .box .account .three p {
+  font-size: 11px;
+  color: #c9c4c5;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.last .login .box .account .three ul {
+  width: 305px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.last .login .box .account .three ul li {
+  padding: 0 13px;
+  float: left;
+}
+.last .login .box .account .three ul li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #0062BC;
+}
+.last .login .box .account .three ul li:nth-of-type(1) a {
+  background: url(../img/login/icon.png) -36px -20px;
+}
+.last .login .box .account .three ul li:nth-of-type(2) a {
+  background: url(../img/login/icon.png) -73px -20px;
+}
+.last .login .box .account .three ul li:nth-of-type(3) a {
+  background: url(../img/login/icon.png) -109px -20px;
+}
+.last .login .box .account .three ul li:nth-of-type(4) a {
+  background: url(../img/login/icon.png) -36px -56px;
+}
+.last .login .box .account .three ul li:nth-of-type(5) a {
+  background: url(../img/login/icon.png) -73px -56px;
+}
+.last .login .box .phone {
+  display: none;
+}
+.last .login .box .phone form {
+  width: 100%;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+.last .login .box .phone form label {
+  position: relative;
+}
+.last .login .box .phone form label span {
+  top: 5px;
+  left: 10px;
+  position: absolute;
+  font-size: 12px;
+}
+.last .login .box .phone form label input {
+  padding-left: 75px;
+  box-sizing: border-box;
+  margin-top: 31px;
+  width: 100%;
+  line-height: 37px;
+  border: 1px solid #f6f5f5;
+}
+.last .login .box .phone form label:nth-of-type(2) input {
+  width: 230px;
+  padding-left: 80px;
+  margin-bottom: 39px;
+}
+.last .login .box .phone form label:nth-of-type(2) button {
+  width: 73px;
+  height: 38px;
+  font-size: 12px;
+  color: #fff;
+}
+.last .login .box .phone form a {
+  font-size: 12px;
+  color: #9ea2aa;
+  margin-left: 251px;
+  text-decoration: underline;
+}
+.last .login .box .phone form button {
+  width: 312px;
+  height: 40px;
+  margin: 0 auto;
+  background: #333333;
+}
+.last .login .box .phone form button a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none!important;
+  margin: 0 auto!important;
+}
+.last .login .box .phone .three {
+  width: 100%;
+  margin-top: 12px;
+}
+.last .login .box .phone .three p {
+  font-size: 11px;
+  color: #c9c4c5;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.last .login .box .phone .three ul {
+  width: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.last .login .box .phone .three ul li {
+  padding: 0 13px;
+  float: left;
+}
+.last .login .box .phone .three ul li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #0062BC;
+}
+.last .login .box .phone .three ul li:nth-of-type(1) a {
+  background: url(../img/login/icon.png) -73px -20px;
+}
+.last .login .box .phone .three ul li:nth-of-type(2) a {
+  background: url(../img/login/icon.png) -109px -20px;
+}
+.last .login .box .phone .three ul li:nth-of-type(3) a {
+  background: url(../img/login/icon.png) -36px -56px;
+}
+.last .login .box .phone .three ul li:nth-of-type(4) a {
+  background: url(../img/login/icon.png) -73px -56px;
+}
+.last .bottom {
+  height: 17px;
+  background: #fff;
+}
+.last .bottom p {
+  text-align: center;
+  color: #5b5a5a;
+  font-size: 11px;
+}
+.last .bottom p a {
+  color: #bdbbba;
+  padding: 0 7px;
+}

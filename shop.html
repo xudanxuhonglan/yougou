@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<mata name="keywords" content="优购网,优购时尚商城,优购网上鞋城"></mata>
+		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
+		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
+		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	</head>
+	<body>
+		<div class="last">
+			<header>
+				<div class="content">
+					<ul class="h_left">
+						<li>
+							<a href="">关注</a>
+							<div class="img">
+								<div>
+									<img src="img/footer6.jpg" alt="">
+								</div>
+								<p>关注公众号</p>
+							</div>
+						</li>
+						<li>
+							<a href="">下载app</a>
+							<div class="img">
+								<div>
+									<img src="img/footer5.png" alt="">
+								</div>
+								<p>下载优购APP</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="h_right">
+						<li id="login">
+							<!-- <a href="reg.html">登录 /</a>
+							<a href="login.html"> 注册</a> -->
+						</li>
+						<li>
+							<a href="">
+								<span class="iconfont icon-shoucang"></span>
+								收藏
+							</a>
+						</li>
+						<li id="shop">
+							<!-- <a href="javascript:;">
+								<span class="iconfont icon-gouwudai"></span>
+								购物袋
+							</a> -->
+						</li>
+						<li>
+							<a href="javascript:;">
+								公告
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<nav id="nav">
+				<div>
+					<h1>
+						<a href="">
+							<img src="img/shop/logo.jpg" alt="">
+						</a>
+					</h1>
+					<p><img src="img/shop/logo1.png" ></p>
+					<div class="right">
+						<ul>
+							<li class="action">
+								我的购物袋
+								<i></i>
+								<em></em>
+							</li>
+							<li>
+								提交订单中心
+								<i></i> 
+								<em></em>
+							</li>
+							<li>
+								成功提交订单
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="shop">
+				<div class="content">
+					<div class="header">
+						<ul>
+							<li>
+								<input type="checkbox">
+								全选
+							</li>
+							<li>商品颜色</li>
+							<li>颜色尺码</li>
+							<li>单价</li>
+							<li>数量</li>
+							<li>小计（元）</li>
+							<li>操作</li>
+						</ul>
+					</div>
+					<div class="body" id="list">
+						
+						<!-- <div class="list">
+							<ul>
+								<li>
+									<input type="checkbox">
+									<span><img src="img/a/tujie3.jpg" alt=""></span>
+								</li>
+								<li>
+									<a href="">BELLE/百丽2020春新商场同款牛剖层皮革女休闲靴U8S1DAD0</a>
+								</li>
+								<li>
+									<p>颜色:<span>黑色</span></p>
+									<p>尺码:<span>35</span></p>
+								</li>
+								<li>
+									<p>999</p>
+								</li>
+								<li>
+									<dl>
+										<dt>-</dt>
+										<dt>1</dt>
+										<dt>+</dt>
+									</dl>
+								</li>
+								<li>
+									<p>999</p>
+								</li>
+								<li>
+									<p><a href="">移入收藏夹</a></p>
+									<p><a href="">删除</a></p>
+								</li>
+							</ul>
+						</div> -->
+                        <div class="box1">
+							<p>什么宝贝都没有哦，快去加购吧~~~</p>
+						</div>
+					</div>
+					<div class="footer">
+						<div class="left">
+							<span>继续购物</span>
+							<span>清空购物车</span>
+						</div>
+						<div class="right">
+							<span>总计（不含运费）:<a href="">999</a></span>
+							<button type="button">去结算</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="bottom">
+				<p>Copyright © 2011-2014 Yougou Technology Co., Ltd. 
+			    	<a href="">粤ICP备09070608号-4</a>
+					 增值电信业务经营许可证：
+					 <a href="">粤 B2-20090203</a>
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript">
+			//从本地存储中拿到数据
+			xuanran()
+			function xuanran(){
+				var list = document.getElementById('list');
+				var data = JSON.parse(window.localStorage.getItem('json'));
+				var str = '';
+				for(var attr in data){
+					str += `<div class="list">
+								<ul>
+									<li>
+										<input type="checkbox">
+										<span><img src="${data[attr].img}" alt=""></span>
+									</li>
+									<li>
+										<a href="">${data[attr].title}</a>
+									</li>
+									<li>
+										<p>颜色:<span>${data[attr].color}</span></p>
+										<p>尺码:<span>${data[attr].size}</span></p>
+									</li>
+									<li>
+										<p>${data[attr].prise}</p>
+									</li>
+									<li>
+										<dl>
+											<dt>-</dt>
+											<dt>${data[attr].num}</dt>
+											<dt>+</dt>
+										</dl>
+									</li>
+									<li>
+										<p>${data[attr].prise}</p>
+									</li>
+									<li>
+										<p><a href="">移入收藏夹</a></p>
+										<p><a href="javascript:;" class="del" num="${attr}">删除</a></p>
+									</li>
+								</ul>
+							</div>`;
+				}
+				list.innerHTML = str;
+			}
+			
+			
+			
+			//实现登录后的header页面的不同
+			var login = document.getElementById('login');
+			var shop = document.getElementById('shop');
+			var username = window.localStorage.getItem('username');
+			var password = window.localStorage.getItem('password');
+			console.log(username);
+				if(username&&password){
+				   login.innerHTML = '<a href="javascript:;">'+username+' /</a><a href="javascript:;"> 退出</a>';
+				}else{
+				   login.innerHTML = '<a href="reg.html">登录 /</a><a href="login.html"> 注册</a>';
+				}
+			
+				if(username&&password){
+					   shop.innerHTML = '<a href="shop.html"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
+				}else{
+					   shop.innerHTML = '<a href="reg.html"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
+				}
+				//退出
+				var out = document.getElementById('login').children[1];
+				console.log(out);
+				out.onclick = function(){
+					window.localStorage.removeItem('username');
+					window.localStorage.removeItem('password');
+					window.open('reg.html');
+				}
+				
+				
+				//删除(有bug)
+				var del = document.getElementsByClassName('del');
+				for(var i=0;i<del.length;i++){
+					del[i].onclick = function(){
+						var num = this.getAttribute('num');
+						var data = JSON.parse(window.localStorage.getItem('json'));
+						delete data[num] //删除该对象的数据
+						window.localStorage.setItem('json',data);
+						location.reload()
+						xuanran()
+						
+					}
+				}
+		</script>
+	</body>
+</html>

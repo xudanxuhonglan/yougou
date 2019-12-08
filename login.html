@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<mata name="keywords" content="优购网,优购时尚商城,优购网上鞋城"></mata>
+		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
+		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
+		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	</head>
+	<body>
+		<div class="last">
+			<header>
+				<div class="content">
+					<ul class="h_left">
+						<li>
+							<a href="">关注</a>
+							<div class="img">
+								<div>
+									<img src="img/footer6.jpg" alt="">
+								</div>
+								<p>关注公众号</p>
+							</div>
+						</li>
+						<li>
+							<a href="">下载app</a>
+							<div class="img">
+								<div>
+									<img src="img/footer5.png" alt="">
+								</div>
+								<p>下载优购APP</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="h_right">
+						<li>
+							<a href="">登录 /</a>
+							<a href=""> 注册</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="iconfont icon-shoucang"></span>
+								收藏
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="iconfont icon-gouwudai"></span>
+								购物袋
+							</a>
+						</li>
+						<li>
+							<a href="">
+								公告
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<nav>
+				<div>
+					<h1>
+						<a href="">
+							<img src="img/login/logo.jpg" alt="">
+						</a>
+					</h1>
+					<p>新用户注册</p>
+				</div>
+				
+			</nav>
+			<div class="login">
+				<div class="box">
+					<div class="change">
+						<button type="button"><a href="reg.html">登录</a></button>
+						<button type="button" class="action">注册</button>
+					</div>
+					<form id="form">
+						<label>
+							<span>手机号</span>
+							<input type="text" placeholder="请输入您的手机号码"/>
+						</label>
+						
+						<label>
+							<span>验证码</span>
+							<input type="text"  src="" placeholder=""/>
+							<i id="code">1234</i>
+						</label>
+						
+						<label>
+							<span>短信验证码</span>
+							<input type="text" src="" placeholder=""/>
+							<button type="button">获取验证码</button>
+						</label>
+						
+						<label>
+							<span>密码</span>
+							<input type="password" placeholder="4-16位的字母或数字"/>
+						</label>
+						
+						<label>
+							<span>确认密码</span>
+							<input type="password" placeholder=""/>
+						</label>
+						
+						<p>
+							<input type="checkbox"/>
+							<span>我已阅读并同意	<a href="">《优购会员注册协议》</a></span>
+						</p>
+						<button type="button"><a href="javascript:;">确认并注册</a></button>
+					</form>
+					
+				</div>
+			</div>
+			<div class="bottom">
+				<p>Copyright © 2011-2014 Yougou Technology Co., Ltd. 
+			    	<a href="">粤ICP备09070608号-4</a>
+					 增值电信业务经营许可证：
+					 <a href="">粤 B2-20090203</a>
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript">
+			
+			//验证码
+			var i = document.getElementById('code');
+			createCode(4,i);
+			i.onclick = function(){
+				createCode(4,i);
+			}
+			
+			//验证提交数据
+			var form =  document.getElementById('form');
+			var inputs = form.getElementsByTagName('input');
+			var btn = form.getElementsByTagName('button')[1];
+			var code = document.getElementById('code').innerHTML;
+			var onoff = [];
+			btn.onclick = function(){
+				onoff = [];
+				if(/^1[3456789]\d{9}$|^[a-zA-Z0-9_-]{4,16}$/.test(inputs[0].value)){
+					onoff.push(true);
+					
+					if(inputs[1].value == code){
+						onoff.push(true);
+						
+						if(/^[a-zA-Z0-9_-]{4,16}$/.test(inputs[3].value)){
+							onoff.push(true);
+							
+							if(inputs[4].value == inputs[3].value){
+								onoff.push(true);
+								
+								if(inputs[5].checked){
+									onoff.push(true);
+								}else{
+									alert('未同意协议');
+								}
+							}else{
+								alert('两次密码不一致');
+								inputs[4].value = '';
+							}
+						}else{
+							alert('密码格式错误');
+							inputs[3].value = '';
+						}
+					}else{
+						alert('验证码错误');
+						inputs[1].value = '';
+					}
+				}else{
+					alert('手机格式错误');
+					inputs[0].value = '';
+				}
+				console.log(this.children[0]);
+			    
+				if(onoff.length>=5){
+					window.localStorage.setItem('username',inputs[0].value);
+					window.localStorage.setItem('password',inputs[3].value);
+					alert('注册成功');
+					this.children[0].href = 'reg.html';
+				}
+			}
+			
+		
+			//生成验证码的函数
+			//length:验证码长度  el:容纳验证码的元素
+			function createCode(length,el) {
+				var code = "";
+				var codeLength = parseInt(length); //验证码的长度
+				var checkCode = document.getElementById("checkCode");
+				////所有候选组成验证码的字符，当然也可以用中文的
+				var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+				'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+				'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); 
+				//循环组成验证码的字符串
+				for (var i = 0; i < codeLength; i++){
+					//获取随机验证码下标
+					var charNum = Math.floor(Math.random() * 62);
+					//组合成指定字符验证码
+					code += codeChars[charNum];
+				}
+				el.innerHTML = code;
+			}
+		</script>
+	</body>
+</html>

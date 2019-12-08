@@ -186,6 +186,28 @@
   float: right;
   text-align: center;
 }
+.commodity .commodity-right .content .brand {
+  padding-left: 32px;
+}
+.commodity .commodity-right .content .brand .logo {
+  float: right;
+  margin-bottom: 10px;
+}
+.commodity .commodity-right .content .brand .logo img {
+  width: 64px;
+  height: 34px;
+}
+.commodity .commodity-right .content .brand .logo span {
+  font-size: 16px;
+  line-height: 34px;
+}
+.commodity .commodity-right .content .brand p {
+  font-size: 12px;
+  color: #333;
+  text-align: left;
+  margin: 10px 0 25px;
+  line-height: 24px;
+}
 .commodity .commodity-right .content .top {
   overflow: hidden;
   padding: 0 32px 0 32px;

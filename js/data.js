@@ -28,32 +28,357 @@ var Data = [{
 			classify:[[
 				{
 					title:'百丽',
+					page:'brand01',
+					link:'brand.html?name=woShoes#brand01',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-belle.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/bai_li_.jpg',
+					introduce:'BeLLE（百丽），百变所以美丽。主张多变多元的新生代态度，不断融合潮流趋势，拥抱不同的生活体验与生活经历。将女性的百变魅力注入到鞋履设计中，让女人在不同的人生阶段，不同的场合，不同的潮流趋势下，尽显自己自信的一面。致力于为现代都市女性提供充满自由的行走体验。',
 					commodity:[{
-						
-					},{},{},{},{}]
+						page:'baili01',
+						link:'info.html?name=woShoes#baili01',
+						img:'//i1.ygimg.cn/pics/belle/2019/101264172/101264172_01_mb.jpg?11',
+						miaoshu:'BELLE/百丽2019秋新商场同款牛剖层皮革/猪巴戈/纺织品女旅游鞋U3P1DCM9',
+						yuanjia:'999',
+						xianjia:'548',
+						tujie:['img/brand/balli/1/tujie1.jpg','img/brand/balli/1/tujie2.jpg','img/brand/balli/1/tujie3.jpg','img/brand/balli/1/tujie4.jpg','img/brand/balli/1/tujie5.jpg','img/brand/balli/1/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-belle.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i1.ygimg.cn/pics/belle/2019/101264172/101264172_00_b.jpg?14',
+						             '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_01_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_02_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_03_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_04_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_05_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_06_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_07_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_08_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_10_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_43_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_50_b.jpg?14',
+									 '//i1.ygimg.cn/pics/belle/2019/101264172/101264172_50_b.jpg?14',],
+						pinpai:'百丽',
+						pinlei:'女士单鞋',
+						color:'灰色',
+						jijie:'秋季',
+						fengge:'休闲'
+					},{
+						page:'baili02',
+						link:'info.html?name=woShoes#baili02',
+						img:'//i2.ygimg.cn/pics/belle/2018/101013437/101013437_01_mb.jpg?8',
+						miaoshu:'BELLE/百丽瘦瘦靴专柜同款弹力绒布女过膝靴BRR93DC8',
+						yuanjia:'1899',
+						xianjia:'599',
+						tujie:['img/brand/balli/2/tujie1.jpg','img/brand/balli/2/tujie2.jpg','img/brand/balli/2/tujie3.jpg','img/brand/balli/2/tujie4.jpg','img/brand/balli/2/tujie5.jpg','img/brand/balli/2/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-belle.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i2.ygimg.cn/pics/belle/2018/101013437/101013437_00_b.jpg?9',
+						            '//i1.ygimg.cn/pics/belle/2018/101013437/101013437_01_b.jpg?9',
+									'//i2.ygimg.cn/pics/belle/2018/101013437/101013437_02_b.jpg?9',
+									'//i2.ygimg.cn/pics/belle/2018/101013437/101013437_03_b.jpg?9',
+									'//i1.ygimg.cn/pics/belle/2018/101013437/101013437_04_b.jpg?9',
+									'//i1.ygimg.cn/pics/belle/2018/101013437/101013437_05_b.jpg?9',
+									'//i2.ygimg.cn/pics/belle/2018/101013437/101013437_08_b.jpg?9',
+									'//i1.ygimg.cn/pics/belle/2018/101013437/101013437_09_b.jpg?9',
+									'//i2.ygimg.cn/pics/belle/2018/101013437/101013437_51_b.jpg?9',
+									'//i2.ygimg.cn/pics/belle/2018/101013437/101013437_52_b.jpg?9'],
+						pinpai:'百丽',
+						pinlei:'女士高跟鞋',
+						color:'黑色',
+						jijie:'秋季',
+						fengge:'欧美'
+					},{},{},{}]
 				},{
 					title:'暇步士',
-					commodity:[{},{},{},{},{}]
+					page:'brand02',
+					link:'brand.html?name=woShoes#brand02',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-hushpuppies.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/xia_bu_shi_.jpg',
+					introduce:'Hush Puppies（暇步士），品牌创立于1958年，以巴吉度猎犬为标志。品牌设计理念以时尚休闲为主，倡导舒适的休闲感受。其不断革新的科技工艺，令鞋品舒适耐穿，树立了令人喜爱的休闲品牌形象。舒适材质与内里，营造舒畅自在的穿着空间，尽情释放随性不羁的年轻姿态；以时尚简约的款型，性感干练的女性特质，搭配舒适粗跟设计，时尚美观给予舒适体验；时尚新潮的设计，配以清新炫目色泽，带来耳目一新的时尚魅力！',
+					commodity:[{
+						page:'xiabushi01',
+						link:'info.html?name=woShoes#xiabushi01',
+						img:'//i2.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_01_mb.jpg?6',
+						miaoshu:'Hush Puppies/暇步士2019秋新款专柜同款牛皮革女休闲鞋HNP30CM9',
+						yuanjia:'1200',
+						xianjia:'1058',
+						tujie:['img/brand/xiabus/1/tujie1.jpg','img/brand/xiabus/1/tujie2.jpg','img/brand/xiabus/1/tujie3.jpg','img/brand/xiabus/1/tujie4.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-hushpuppies.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_00_b.jpg?1',
+						            '//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_01_b.jpg?2',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_10_b.jpg?6',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_11_b.jpg?6',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_12_b.jpg?6',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_41_b.jpg?6',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_42_b.jpg?6',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_51_b.jpg?6',
+									'//i1.ygimg.cn/pics/hushpuppies/2019/101249063/101249063_52_b.jpg?6'],
+						pinpai:'暇步士',
+						pinlei:'女士单鞋',
+						color:'白色',
+						jijie:'秋季',
+						fengge:'休闲'
+					},{},{},{},{}]
 				},{
 					title:'天美意',
-					commodity:[{},{},{},{},{}]
+					page:'brand03',
+					link:'brand.html?name=woShoes#brand03',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-teenmix.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/tian_mei_yi_.jpg',
+					introduce:'Teenmix（天美意），作为一个都市时尚休闲品牌，倡导“life for fun ,style for teens”即 “人生追求情趣，年轻追求个性”的生活品位，迎合都市年轻人不拘一格，追求mix&match自由组合，创出自我风格的潮流理念。Teenmix向人们展示了流行的转变，强调创意与个性，“teen”代表一群张扬个性、散发活力、追求都市炫彩生活的新新人群；“ mix”即mix&match，代表时尚混搭精神，品牌为年轻人提供恍如贴身订造的时尚潮品，并因应时尚的转变而响应。“随我意，天美意”传达了品牌的主张与个性。',
+					commodity:[{
+						page:'tianmeiyi01',
+						link:'info.html?name=woShoes#tianmeiyi01',
+						img:'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_01_mb.jpg?6',
+						miaoshu:'Teenmix/天美意冬商场同款黑色羊绒皮革通勤风粗跟女短靴AS801DD8',
+						yuanjia:'1199',
+						xianjia:'399',
+						tujie:['img/brand/tianmeiy/1/tujie1.jpg','img/brand/tianmeiy/1/tujie2.jpg','img/brand/tianmeiy/1/tujie3.jpg','img/brand/tianmeiy/1/tujie4.jpg','img/brand/tianmeiy/1/tujie5.jpg','img/brand/tianmeiy/1/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-teenmix.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_00_b.jpg?4',
+						            '//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_01_b.jpg?4',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_02_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_03_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_04_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_05_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_10_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_11_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_41_b.jpg?6',
+									'//i2.ygimg.cn/pics/teenmix/2018/101022809/101022809_42_b.jpg?6'],
+						pinpai:'天美意',
+						pinlei:'女士高跟鞋',
+						color:'黑色',
+						jijie:'秋季',
+						fengge:'欧美'
+					},{},{},{},{}]
 				},{
 					title:'百思图',
-					commodity:[{},{},{},{},{}]
+					page:'brand04',
+					link:'brand.html?name=woShoes#brand04',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-basto.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/bai_si_tu_.jpg',
+					introduce:'BASTO（百思图），品牌拥有17年历史，秉承优雅、甜美、清新的设计理念，主张“好嫁风”的产品风格，将甜美俏丽的少女情怀融合优雅气质的时尚品味，塑造出唯美优雅、受欢迎的女鞋款式。主打以女性温柔与亲和力为特色的流行时尚产品，糅合雅致又富有亲和力的裸粉色调，淑媛端庄、清新甜美。目前品牌已开设线下门店达1400多家。',
+					commodity:[{
+						page:'baisitu01',
+						link:'info.html?name=woShoes#baisitu01',
+						img:'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_01_mb.jpg?5',
+						miaoshu:'BASTO/百思图2019冬季灰色弹力布珍珠饰扣优雅方头高跟女靴T2299DD9',
+						yuanjia:'1099',
+						xianjia:'499',
+						tujie:['img/brand/baisit/1/tujie1.jpg','img/brand/baisit/1/tujie2.jpg','img/brand/baisit/1/tujie3.jpg','img/brand/baisit/1/tujie4.jpg','img/brand/baisit/1/tujie5.jpg','img/brand/baisit/1/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-basto.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i1.ygimg.cn/pics/basto/2019/101263792/101263792_00_b.jpg?4',
+						            '//i1.ygimg.cn/pics/basto/2019/101263792/101263792_01_b.jpg?4',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_02_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_03_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_04_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_10_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_11_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_12_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_13_b.jpg?5',
+									'//i1.ygimg.cn/pics/basto/2019/101263792/101263792_14_b.jpg?5'],
+						pinpai:'百思图',
+						pinlei:'女士高跟鞋',
+						color:'卡其色',
+						jijie:'秋季',
+						fengge:'欧美'
+					},{},{},{},{}]
 				},{
 					title:'圣伽步',
-					commodity:[{},{},{},{},{}]
+					page:'brand05',
+					link:'brand.html?name=woShoes#brand05',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-skap.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/sheng_jia_bu_.jpg',
+					introduce:'SKAP代表了现代人文理念的升华，提倡回归自然的同时，也和现代城市白领的生活模式紧紧相扣，他崇尚自然、远离喧嚣，用个性的情怀品味自然之美；他追求美好，秉承对质量、科技的坚持，开启舒适、健康生活之旅，打造明日生活态度。',
+					commodity:[{
+						page:'shengjiabu01',
+						link:'info.html?name=woShoes#shengjiabu01',
+						img:'//i2.ygimg.cn/pics/skap/2017/101003353/101003353_01_mb.jpg?4',
+						miaoshu:'SKAP/圣伽步2019秋冬新款专柜同款牛皮革简约厚底男休闲鞋20914281',
+						yuanjia:'2500',
+						xianjia:'1700',
+						tujie:['img/brand/shengjiab/1/tujie1.jpg','img/brand/shengjiab/1/tujie2.jpg','img/brand/shengjiab/1/tujie3.jpg','img/brand/shengjiab/1/tujie4.jpg','img/brand/shengjiab/1/tujie5.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-skap.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i2.ygimg.cn/pics/skap/2017/101003353/101003353_01_b.jpg?4',
+						            '//i2.ygimg.cn/pics/skap/2017/101003353/101003353_02_b.jpg?4',
+									'//i1.ygimg.cn/pics/skap/2017/101003353/101003353_10_b.jpg?4',
+									'//i1.ygimg.cn/pics/skap/2017/101003353/101003353_11_b.jpg?4',
+									'//i1.ygimg.cn/pics/skap/2017/101003353/101003353_41_b.jpg?4',
+									'img/woman/danxie/2/xiangqin6.jpg','img/woman/danxie/2/xiangqin7.jpg','img/woman/danxie/2/xiangqin8.jpg','img/woman/danxie/2/xiangqin9.jpg','img/woman/danxie/2/xiangqin10.jpg'],
+						pinpai:'圣伽步',
+						pinlei:'女士高跟鞋',
+						color:'灰色',
+						jijie:'秋季',
+						fengge:'韩范'
+					},{},{},{},{}]
 				},{
 					title:'森达',
-					commodity:[{},{},{},{},{}]
+					page:'brand06',
+					link:'brand.html?name=woShoes#brand06',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-senda.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/sen_da_.jpg',
+					introduce:'SENDA（森达），品牌成立于1977年，拥有40年发展史，秉承舒适的制鞋理念，从用料到工艺都经过严格质量把控。男鞋以舒适质感著称，覆盖商务正装、商务休闲、时尚休闲三大系列，适用不同场合的需求，同时开发摩克、加州等一系列功能性鞋履，行走体验；女鞋以款式优雅、穿着舒适为主要特征，依时尚潮流添加当季设计元素，每季推出时尚、休闲等系列鞋款，为都市白领提供不同场合的搭配需求。目前门店已覆盖近百座城市，数量达1800多家。',
+					commodity:[{
+						page:'senda01',
+						link:'info.html?name=woShoes#senda01',
+						img:'//i2.ygimg.cn/pics/senda/2019/101221639/101221639_01_mb.jpg?10',
+						miaoshu:'Senda/森达2019春季新款专柜同款韩版厚底女运动老爹鞋3RQ01AM9',
+						yuanjia:'1099',
+						xianjia:'499',
+						tujie:['img/brand/senda/1/tujie1.jpg','img/brand/senda/1/tujie2.jpg','img/brand/senda/1/tujie3.jpg','img/brand/senda/1/tujie4.jpg','img/brand/senda/1/tujie5.jpg','img/brand/senda/1/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-senda.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i2.ygimg.cn/pics/senda/2019/101221639/101221639_01_b.jpg?10',
+						            '//i1.ygimg.cn/pics/senda/2019/101221639/101221639_02_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_03_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_04_b.jpg?10',
+									'//i2.ygimg.cn/pics/senda/2019/101221639/101221639_05_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_06_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_07_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_41_b.jpg?10',
+									'//i2.ygimg.cn/pics/senda/2019/101221639/101221639_42_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_43_b.jpg?10',
+									'//i1.ygimg.cn/pics/senda/2019/101221639/101221639_50_b.jpg?10'],
+						pinpai:'百丽',
+						pinlei:'女士单鞋',
+						color:'粉色',
+						jijie:'秋季',
+						fengge:'休闲'
+					},{},{},{},{}]
 				}
 			],[
 				{
 					title:'拔佳',
-					commodity:[{},{},{},{},{}]
+					page:'brand07',
+					link:'brand.html?name=woShoes#brand07',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-bata.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/ba_jia_.jpg',
+					introduce:'Bata（拔佳），品牌起源于1894年，在捷克的一间手工作坊诞生。品牌理念“我们专注制鞋”，120多年以来，Bata始终秉承百年传统制鞋技术与工艺，致力于为顾客提供舒适的鞋履。',
+					commodity:[{
+						page:'bajia01',
+						link:'info.html?name=woShoes#bajia01',
+						img:'//i1.ygimg.cn/pics/bata/2019/101289680/101289680_01_mb.jpg?9',
+						miaoshu:'Bata/拔佳2019冬专柜同款帅气马丁靴拉链皮革短靴ins女潮ZIX01DD9',
+						yuanjia:'1355',
+						xianjia:'590',
+						tujie:['img/brand/bajia/1/tujie1.jpg','img/brand/bajia/1/tujie2.jpg','img/brand/bajia/1/tujie3.jpg','img/brand/bajia/1/tujie4.jpg','img/brand/bajia/1/tujie5.jpg','img/brand/bajia/1/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-bata.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i2.ygimg.cn/pics/bata/2019/101289680/101289680_00_b.jpg?11',
+						            '//i2.ygimg.cn/pics/bata/2019/101289680/101289680_01_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_10_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_11_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_12_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_13_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_14_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_41_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_42_b.jpg?9',
+									'//i2.ygimg.cn/pics/bata/2019/101289680/101289680_55_b.jpg?9'],
+						pinpai:'拔佳',
+						pinlei:'女士靴子',
+						color:'黑色',
+						jijie:'秋季',
+						fengge:'欧美'
+					},{},{},{},{}]
 				},{
 					title:'她他',
-					commodity:[{},{},{},{},{}]
+					page:'brand08',
+					link:'brand.html?name=woShoes#brand08',
+					logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-tata.png',
+					img:'//i1.ygimg.cn/pics/shop/seoul/PCpin_pai_gu_shi/2019qiu/ta_ta_.jpg',
+					introduce:'他她（Tata），品牌成立于2003年，致力为都市年轻人群提供时尚潮流、具有性价比的鞋履产品。十五年来“踏踏”的着地声，寓意都市白领元气满满的生活，如时尚“伴履”的TATA一直陪伴左右、伴随走出TATA的时尚步伐。2017年TATA美丽蜕变，TATA STAR元素的加入预示品牌将成为闪亮、前端的时尚鞋履品牌。',
+					commodity:[{
+						page:'tata01',
+						link:'info.html?name=woShoes#tata01',
+						img:'//i2.ygimg.cn/pics/tata/2019/101246093/101246093_01_mb.jpg?15',
+						miaoshu:'Tata/他她2019秋黑色牛皮革圆头流苏乐福鞋女单鞋DS9QCCM9',
+						yuanjia:'899',
+						xianjia:'499',
+						tujie:['img/brand/tata/1/tujie1.jpg','img/brand/tata/1/tujie2.jpg','img/brand/tata/1/tujie3.jpg','img/brand/tata/1/tujie4.jpg','img/brand/tata/1/tujie5.jpg','img/woman/danxie/2/tujie6.jpg'],
+						logo:'//i1.ygimg.cn/pics/brandlogo/brandlogforcms/blackS-tata.png',
+						chima:['34','35','36','37','38','39'],
+						spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+						         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+								 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+								 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+								 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+								 '皮质特征：织物','防水台高度：无'],
+						cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
+						spxiangqin:['//i1.ygimg.cn/pics/tata/2019/101246093/101246093_01_b.jpg?2',
+						            '//i1.ygimg.cn/pics/tata/2019/101246093/101246093_02_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_03_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_04_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_05_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_08_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_11_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_43_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_50_b.jpg?15',
+									'//i1.ygimg.cn/pics/tata/2019/101246093/101246093_51_b.jpg?15'],
+						pinpai:'她他',
+						pinlei:'女士单鞋',
+						color:'黑色',
+						jijie:'秋季',
+						fengge:'甜美'
+					},{},{},{},{}]
 				}
 			]]
 			
@@ -62,37 +387,45 @@ var Data = [{
 			classify:[[
 					{
 						title:'2019新款',
+						page:'hot01',
+						link:'navList.html?name=woShoes#hot01',
 						commodity:[{
-							img:'img/woman/xuezi/1/1.jpg',
-							miaoshu:'Tata/他她2019冬黑色牛皮革绑带马丁靴拉链方跟休闲女短靴BGV01DD9',
-							yuanjia:'1399',
-							xianjia:'448',
-							tujie:['img/woman/xuezi/1/tujie1.jpg','img/woman/xuezi/1/tujie2.jpg','img/woman/xuezi/1/tujie3.jpg','img/woman/xuezi/1/tujie4.jpg','img/woman/xuezi/1/tujie5.jpg'],
-							logo:'img/woman/xuezi/1/logo.jpg',	
-							chima:['34','35','36','37','38','39','40'],
-							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
-							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
-									 '鞋跟形状：方跟','36码鞋长参考（女）：25.5CM','流行元素：交叉绑带纯色','36码鞋宽参考（女）：10CM','风格：休闲',
-									 '色系：黑色','跟高数值：4.5CM','性别：女子','筒高数值：13CM','靴筒筒面材质：牛皮革',
-									 '里料材质：人造短毛绒','制鞋公艺：车线胶粘','鞋垫材质：人造短毛绒','款式季节：冬季','前掌高度：3CM',
-									 '皮质特征：软皮面','防水台高度：无'],
+							page:'xinkuan_good01',
+							link:'info.html?name=woShoes#xinkuan_good01',
+							img:'img/woman/danxie/2/2.jpg',
+							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
+							yuanjia:'1099',
+							xianjia:'499',
+							tujie:['img/woman/danxie/2/tujie1.jpg','img/woman/danxie/2/tujie2.jpg','img/woman/danxie/2/tujie3.jpg','img/woman/danxie/2/tujie4.jpg','img/woman/danxie/2/tujie5.jpg','img/woman/danxie/2/tujie6.jpg','img/woman/danxie/2/tujie7.jpg'],
+							logo:'img/woman/danxie/2/logo.png',	
+							chima:['34','35','36','37','38','39'],
+							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
+							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
+									 '鞋跟形状：方跟','36码鞋长参考（女）：24CM','流行元素：绒面','36码鞋宽参考（女）：8.5CM','风格：休闲',
+									 '色系：黑色','跟高数值：5CM','性别：女子','筒高数值：17CM','靴筒筒面材质：其他',
+									 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
+									 '皮质特征：织物','防水台高度：无'],
 							cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
-							spxiangqin:['img/woman/xuezi/1/xiangqin1.jpg','img/woman/xuezi/1/xiangqin2.jpg','img/woman/xuezi/1/xiangqin3.jpg','img/woman/xuezi/1/xiangqin4.jpg','img/woman/xuezi/1/xiangqin5.jpg','img/woman/xuezi/1/xiangqin6.jpg','img/woman/xuezi/1/xiangqin7.jpg','img/woman/xuezi/1/xiangqin8.jpg','img/woman/xuezi/1/xiangqin9.jpg','img/woman/xuezi/1/xiangqin10.jpg','img/woman/xuezi/1/xiangqin11.jpg','img/woman/xuezi/1/xiangqin12.jpg','img/woman/xuezi/1/xiangqin13.jpg'],
-							pinpai:'她他',
-							pinlei:'女士靴子',
-							color:'黑色',
+							spxiangqin:['img/woman/danxie/2/xiangqin1.jpg','img/woman/danxie/2/xiangqin2.jpg','img/woman/danxie/2/xiangqin3.jpg','img/woman/danxie/2/xiangqin4.jpg','img/woman/danxie/2/xiangqin5.jpg','img/woman/danxie/2/xiangqin6.jpg','img/woman/danxie/2/xiangqin7.jpg','img/woman/danxie/2/xiangqin8.jpg','img/woman/danxie/2/xiangqin9.jpg','img/woman/danxie/2/xiangqin10.jpg'],
+							pinpai:'百丽',
+							pinlei:'女士高跟鞋',
+							color:'粉色',
 							jijie:'秋季',
-							fengge:'休闲'
+							fengge:'欧美'
 						},{},{},{},{}]
 					},{
 						title:'专柜同款',
+						page:'hot02',
+						link:'navList.html?name=woShoes#hot02',
 						commodity:[{
+							page:'zhuangui_good01',
+							link:'info.html?name=woShoes#zhuangui_good01',
 							img:'img/woman/xuezi/1/1.jpg',
 							miaoshu:'Tata/他她2019冬黑色牛皮革绑带马丁靴拉链方跟休闲女短靴BGV01DD9',
 							yuanjia:'1399',
 							xianjia:'448',
 							tujie:['img/woman/xuezi/1/tujie1.jpg','img/woman/xuezi/1/tujie2.jpg','img/woman/xuezi/1/tujie3.jpg','img/woman/xuezi/1/tujie4.jpg','img/woman/xuezi/1/tujie5.jpg'],
-							logo:'img/woman/xuezi/1/logo.jpg',	
+							logo:'img/woman/xuezi/1/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -110,13 +443,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'热销TOP',
+						page:'hot03',
+						link:'navList.html?name=woShoes#hot03',
 						commodity:[{
+							page:'rexiao_good01',
+							link:'info.html?name=woShoes#rexiao_good01',
 							img:'img/woman/xuezi/1/1.jpg',
 							miaoshu:'Tata/他她2019冬黑色牛皮革绑带马丁靴拉链方跟休闲女短靴BGV01DD9',
 							yuanjia:'1399',
 							xianjia:'448',
 							tujie:['img/woman/xuezi/1/tujie1.jpg','img/woman/xuezi/1/tujie2.jpg','img/woman/xuezi/1/tujie3.jpg','img/woman/xuezi/1/tujie4.jpg','img/woman/xuezi/1/tujie5.jpg'],
-							logo:'img/woman/xuezi/1/logo.jpg',	
+							logo:'img/woman/xuezi/1/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -134,13 +471,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'小白鞋',
+						page:'hot04',
+						link:'navList.html?name=woShoes#hot04',
 						commodity:[{
+							page:'xiaobaixie_good01',
+							link:'info.html?name=woShoes#xiaobaixie_good01',
 							img:'img/woman/xuezi/1/1.jpg',
 							miaoshu:'Tata/他她2019冬黑色牛皮革绑带马丁靴拉链方跟休闲女短靴BGV01DD9',
 							yuanjia:'1399',
 							xianjia:'448',
 							tujie:['img/woman/xuezi/1/tujie1.jpg','img/woman/xuezi/1/tujie2.jpg','img/woman/xuezi/1/tujie3.jpg','img/woman/xuezi/1/tujie4.jpg','img/woman/xuezi/1/tujie5.jpg'],
-							logo:'img/woman/xuezi/1/logo.jpg',	
+							logo:'img/woman/xuezi/1/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -158,13 +499,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'老爹鞋',
+						page:'hot05',
+						link:'navList.html?name=woShoes#hot05',
 						commodity:[{
+							page:'laodiexie_good01',
+							link:'info.html?name=woShoes#laodiexie_good01',
 							img:'img/woman/xuezi/1/1.jpg',
 							miaoshu:'Tata/他她2019冬黑色牛皮革绑带马丁靴拉链方跟休闲女短靴BGV01DD9',
 							yuanjia:'1399',
 							xianjia:'448',
 							tujie:['img/woman/xuezi/1/tujie1.jpg','img/woman/xuezi/1/tujie2.jpg','img/woman/xuezi/1/tujie3.jpg','img/woman/xuezi/1/tujie4.jpg','img/woman/xuezi/1/tujie5.jpg'],
-							logo:'img/woman/xuezi/1/logo.jpg',	
+							logo:'img/woman/xuezi/1/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -187,13 +532,17 @@ var Data = [{
 				classify:[[
 					{
 						title:'短靴',
+						page:'xuezi01',
+						link:'navList.html?name=woShoes#xuezi01',
 						commodity:[{
+							page:'duanxue_good01',
+							link:'info.html?name=woShoes#duanxue_good01',
 							img:'img/woman/xuezi/1/1.jpg',
 							miaoshu:'Tata/他她2019冬黑色牛皮革绑带马丁靴拉链方跟休闲女短靴BGV01DD9',
 							yuanjia:'1399',
 							xianjia:'448',
 							tujie:['img/woman/xuezi/1/tujie1.jpg','img/woman/xuezi/1/tujie2.jpg','img/woman/xuezi/1/tujie3.jpg','img/woman/xuezi/1/tujie4.jpg','img/woman/xuezi/1/tujie5.jpg'],
-                            logo:'img/woman/xuezi/1/logo.jpg',	
+                            logo:'img/woman/xuezi/1/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -211,13 +560,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'中靴',
+						page:'xuezi02',
+						link:'navList.html?name=woShoes#xuezi02',
 						commodity:[{
+							page:'zhongxue_good01',
+							link:'info.html?name=woShoes#zhongxue_good01',
 							img:'img/woman/xuezi/2/2.jpg',
 							miaoshu:'Tata/他她2019冬黑色拼接通勤套筒瘦瘦靴圆头粗跟中靴女靴CXF06DZ9',
 							yuanjia:'1099',
 							xianjia:'328',
 							tujie:['img/woman/xuezi/2/tujie1.jpg','img/woman/xuezi/2/tujie2.jpg','img/woman/xuezi/2/tujie3.jpg','img/woman/xuezi/2/tujie4.jpg','img/woman/xuezi/2/tujie5.jpg','img/woman/xuezi/2/tujie6.jpg'],
-							logo:'img/woman/xuezi/2/logo.jpg',	
+							logo:'img/woman/xuezi/2/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:无内底','内增高:无','鞋面材质:牛皮革布面','闭合方式:套筒',
 							         '靴筒口围：24CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -235,13 +588,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'长靴',
+						page:'xuezi03',
+						link:'navList.html?name=woShoes#xuezi03',
 						commodity:[{
+							page:'changxue_good01',
+							link:'info.html?name=woShoes#changxue_good01',
 							img:'img/woman/xuezi/3/3.jpg',
 							miaoshu:'BASTO/百思图2019冬季专柜同款黑色时髦方跟瘦瘦靴女皮靴A3560DG9',
 							yuanjia:'1799',
 							xianjia:'1099',
 							tujie:['img/woman/xuezi/3/tujie1.jpg','img/woman/xuezi/3/tujie2.jpg','img/woman/xuezi/3/tujie3.jpg','img/woman/xuezi/3/tujie4.jpg','img/woman/xuezi/3/tujie5.jpg','img/woman/xuezi/3/tujie6.jpg','img/woman/xuezi/3/tujie7.jpg'],
-							logo:'img/woman/xuezi/3/logo.jpg',	
+							logo:'img/woman/xuezi/3/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -259,13 +616,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'绒里靴',
+						page:'xuezi04',
+						link:'navList.html?name=woShoes#xuezi04',
 						commodity:[{
+							page:'ronglixue_good01',
+							link:'info.html?name=woShoes#ronglixue_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -283,13 +644,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'马丁靴',
+						page:'xuezi05',
+						link:'navList.html?name=woShoes#xuezi05',
 						commodity:[{
+							page:'madingxue_good01',
+							link:'info.html?name=woShoes#madingxue_good01',
 							img:'img/woman/xuezi/5/5.jpg',
 							miaoshu:'Teenmix/天美意2019冬新款商场同款黑绒里英伦风系带短靴AV771DD9',
 							yuanjia:'1399',
 							xianjia:'448',
 							tujie:['img/woman/xuezi/5/tujie1.jpg','img/woman/xuezi/5/tujie2.jpg','img/woman/xuezi/5/tujie3.jpg','img/woman/xuezi/5/tujie4.jpg','img/woman/xuezi/5/tujie5.jpg'],
-							logo:'img/woman/xuezi/5/logo.jpg',	
+							logo:'img/woman/xuezi/5/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -307,13 +672,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'雪地靴',
+						page:'xuezi06',
+						link:'navList.html?name=woShoes#xuezi06',
 						commodity:[{
+							page:'xuedixue_good01',
+							link:'info.html?name=woShoes#xuedixue_good01',
 							img:'img/woman/xuezi/6/6.jpg',
 							miaoshu:'BELLE/百丽2019冬新款牛剖层皮革女休闲雪地靴(毛里)35239DD9',
 							yuanjia:'999',
 							xianjia:'529',
 							tujie:['img/woman/xuezi/6/tujie1.jpg','img/woman/xuezi/6/tujie2.jpg','img/woman/xuezi/6/tujie3.jpg','img/woman/xuezi/6/tujie4.jpg','img/woman/xuezi/6/tujie5.jpg','img/woman/xuezi/6/tujie6.jpg','img/woman/xuezi/6/tujie7.jpg'],
-							logo:'img/woman/xuezi/6/logo.jpg',	
+							logo:'img/woman/xuezi/6/logo.png',	
 							chima:['34','35','36','37','38','39','40'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:人造短绒毛','内增高:无','鞋面材质:牛皮革','闭合方式:系带',
 							         '靴筒口围：25CM','配跟：无','鞋类流行款式：马丁靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -335,13 +704,17 @@ var Data = [{
 				classify:[[
 					{
 						title:'浅口鞋',
+						page:'danxie01',
+						link:'navList.html?name=woShoes#danxie01',
 						commodity:[{
+							page:'qiankou_good01',
+							link:'info.html?name=woShoes#qiankou_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -359,13 +732,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'尖头鞋',
+						page:'danxie02',
+						link:'navList.html?name=woShoes#danxie02',
 						commodity:[{
+							page:'jiantou_good01',
+							link:'info.html?name=woShoes#jiantou_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -383,13 +760,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'玛丽珍',
+						page:'danxie03',
+						link:'navList.html?name=woShoes#danxie03',
 						commodity:[{
+							page:'mali_good01',
+							link:'info.html?name=woShoes#mali_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -407,13 +788,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'休闲鞋',
+						page:'danxie04',
+						link:'navList.html?name=woShoes#danxie04',
 						commodity:[{
+							page:'xiuxian_good01',
+							link:'info.html?name=woShoes#xiuxian_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -431,13 +816,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'高跟鞋',
+						page:'danxie05',
+						link:'navList.html?name=woShoes#danxie05',
 						commodity:[{
+							page:'gaogen_good01',
+							link:'info.html?name=woShoes#gaogen_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -455,13 +844,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'细跟鞋',
+						page:'danxie06',
+						link:'navList.html?name=woShoes#danxie06',
 						commodity:[{
-							img:'img/woman/xuezi/4/4.jpg',
+							page:'xigen_good01',
+							link:'info.html?name=woShoes#xigen_good01',
+							img:'img/woman/danxie/2/2.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
-							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							tujie:['img/woman/danxie/2/tujie1.jpg','img/woman/danxie/2/tujie2.jpg','img/woman/danxie/2/tujie3.jpg','img/woman/danxie/2/tujie4.jpg','img/woman/danxie/2/tujie5.jpg','img/woman/danxie/2/tujie6.jpg','img/woman/danxie/2/tujie7.jpg'],
+							logo:'img/woman/danxie/2/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -470,24 +863,28 @@ var Data = [{
 									 '里料材质：布料','制鞋公艺：胶粘皮鞋','鞋垫材质：头层猪皮革','款式季节：冬季','前掌高度：1.5CM',
 									 '皮质特征：织物','防水台高度：无'],
 							cmxinxi:['法国码','32','33','34','35','36','37','38','39','40','41','42','国际码','210','215','220','225','230','235','240','245','250','255','260'],
-							spxiangqin:['img/woman/xuezi/4/xiangqin1.jpg','img/woman/xuezi/4/xiangqin2.jpg','img/woman/xuezi/4/xiangqin3.jpg','img/woman/xuezi/4/xiangqin4.jpg','img/woman/xuezi/4/xiangqin5.jpg','img/woman/xuezi/4/xiangqin6.jpg','img/woman/xuezi/4/xiangqin7.jpg','img/woman/xuezi/4/xiangqin8.jpg','img/woman/xuezi/4/xiangqin9.jpg','img/woman/xuezi/4/xiangqin10.jpg','img/woman/xuezi/4/xiangqin11.jpg','img/woman/xuezi/4/xiangqin12.jpg','img/woman/xuezi/4/xiangqin13.jpg','img/woman/xuezi/4/xiangqin14.jpg','img/woman/xuezi/4/xiangqin15.jpg','img/woman/xuezi/4/xiangqin16.jpg'],
+							spxiangqin:['img/woman/danxie/2/xiangqin1.jpg','img/woman/danxie/2/xiangqin2.jpg','img/woman/danxie/2/xiangqin3.jpg','img/woman/danxie/2/xiangqin4.jpg','img/woman/danxie/2/xiangqin5.jpg','img/woman/danxie/2/xiangqin6.jpg','img/woman/danxie/2/xiangqin7.jpg','img/woman/danxie/2/xiangqin8.jpg','img/woman/danxie/2/xiangqin9.jpg','img/woman/danxie/2/xiangqin10.jpg'],
 							pinpai:'百丽',
-							pinlei:'女士靴子',
-							color:'灰色',
-							jijie:'冬季',
+							pinlei:'女士高跟鞋',
+							color:'粉色',
+							jijie:'秋季',
 							fengge:'欧美'
 						},{},{},{},{}]
 					},
 				],[
 					{
 						title:'满帮鞋',
+						page:'danxie07',
+						link:'navList.html?name=woShoes#danxie07',
 						commodity:[{
+							page:'manbang_good01',
+							link:'info.html?name=woShoes#manbang_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -505,13 +902,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'乐福鞋',
+						page:'danxie08',
+						link:'navList.html?name=woShoes#danxie08',
 						commodity:[{
+							page:'lefu_good01',
+							link:'info.html?name=woShoes#lefu_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -529,13 +930,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'英伦风',
+						page:'danxie09',
+						link:'navList.html?name=woShoes#danxie09',
 						commodity:[{
+							page:'yinlun_good01',
+							link:'info.html?name=woShoes#yinlun_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -553,13 +958,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'运动鞋',
+						page:'danxie010',
+						link:'navList.html?name=woShoes#danxie010',
 						commodity:[{
+							page:'yundong_good01',
+							link:'info.html?name=woShoes#yundong_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -577,13 +986,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'平底鞋',
+						page:'danxie011',
+						link:'navList.html?name=woShoes#danxie011',
 						commodity:[{
+							page:'pindi_good01',
+							link:'info.html?name=woShoes#pindi_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -601,13 +1014,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'粗跟鞋',
+						page:'danxie012',
+						link:'navList.html?name=woShoes#danxie012',
 						commodity:[{
+							page:'cugen_good01',
+							link:'info.html?name=woShoes#cugen_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -630,13 +1047,17 @@ var Data = [{
 				classify:[[
 					{
 						title:'2019新款',
+						page:'liangxie01',
+						link:'navList.html?name=woShoes#liangxie01',
 						commodity:[{
+							page:'xk_good01',
+							link:'info.html?name=woShoes#xk_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -654,13 +1075,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'穆勒凉鞋',
+						page:'liangxie02',
+						link:'navList.html?name=woShoes#liangxie02',
 						commodity:[{
+							page:'mule_good01',
+							link:'info.html?name=woShoes#mule_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -678,13 +1103,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'中空凉鞋',
+						page:'liangxie03',
+						link:'navList.html?name=woShoes#liangxie03',
 						commodity:[{
+							page:'zk_good01',
+							link:'info.html?name=woShoes#zk_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -702,13 +1131,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'纯凉鞋',
+						page:'liangxie04',
+						link:'navList.html?name=woShoes#liangxie04',
 						commodity:[{
+							page:'liangxie_good01',
+							link:'info.html?name=woShoes#liangxie_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -726,13 +1159,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'凉拖',
+						page:'liangxie05',
+						link:'navList.html?name=woShoes#liangxie05',
 						commodity:[{
+							page:'tuoxie_good01',
+							link:'info.html?name=woShoes#tuoxie_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -750,13 +1187,17 @@ var Data = [{
 						},{},{},{},{}]
 					},{
 						title:'后空凉鞋',
+						page:'liangxie06',
+						link:'navList.html?name=woShoes#liangxie06',
 						commodity:[{
+							page:'hk_good01',
+							link:'info.html?name=woShoes#hk_good01',
 							img:'img/woman/xuezi/4/4.jpg',
 							miaoshu:'BELLE/百丽2019冬新商场同款牛剖层皮革女雪地靴保暖靴19920DD9',
 							yuanjia:'1099',
 							xianjia:'499',
 							tujie:['img/woman/xuezi/4/tujie1.jpg','img/woman/xuezi/4/tujie2.jpg','img/woman/xuezi/4/tujie3.jpg','img/woman/xuezi/4/tujie4.jpg','img/woman/xuezi/4/tujie5.jpg','img/woman/xuezi/4/tujie6.jpg','img/woman/xuezi/4/tujie7.jpg'],
-							logo:'img/woman/xuezi/4/logo.jpg',	
+							logo:'img/woman/xuezi/4/logo.png',	
 							chima:['34','35','36','37','38','39'],
 							spxinxi:['鞋底材质:橡胶底','靴筒内底材质:头层猪皮革','内增高:无','鞋面材质:羊皮革','闭合方式:侧拉链',
 							         '靴筒口围：39CM','配跟：无','鞋类流行款式：中靴','鞋头款式：圆头','鞋面图案：纯色',
@@ -1297,77 +1738,3 @@ var Data = [{
         }];
 	
 
-// },{
-// 	title:'Men Shoes'
-// },{
-// 	title:'sports'
-// },{
-// 	title:'outdoors'
-// },{
-// 	title:'children',
-// 	hotBrands:{
-// 		title:'热门品牌',
-// 		classify:{
-// 			title:'阿迪',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'耐克',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'三叶草',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'鬼冢虎',
-// 			//commodity:{},{},{},{},{}
-// 		}
-// 		
-// 	},
-// 	shoes:{
-// 		title:'童鞋',
-// 		classify:{
-// 			title:'复刻鞋',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'休闲鞋',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'篮球鞋',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'跑步鞋',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'训练鞋',
-// 			//commodity:{},{},{},{},{}
-// 		}
-// 		
-// 	},
-// 	clothes:{
-// 		title:'童装',
-// 		classify:{
-// 			title:'儿童套装',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'裤装',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'外套/风衣',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'卫衣',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'棉服/羽绒服',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'裙装',
-// 			//commodity:{},{},{},{},{}
-// 		},{
-// 			title:'T裇',
-// 			//commodity:{},{},{},{},{}
-// 		}
-// 		
-// 	},
-// },{
-// 	title:'bags'
-// }]

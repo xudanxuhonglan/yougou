@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<mata name="keywords" content="优购网,优购时尚商城,优购网上鞋城"></mata>
+		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
+		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
+		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reg.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	</head>
+	<body>
+		<div class="last">
+			<header>
+				<div class="content">
+					<ul class="h_left">
+						<li>
+							<a href="">关注</a>
+							<div class="img">
+								<div>
+									<img src="img/footer6.jpg" alt="">
+								</div>
+								<p>关注公众号</p>
+							</div>
+						</li>
+						<li>
+							<a href="">下载app</a>
+							<div class="img">
+								<div>
+									<img src="img/footer5.png" alt="">
+								</div>
+								<p>下载优购APP</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="h_right">
+						<li>
+							<a href="reg.html">登录 /</a>
+							<a href="login.html"> 注册</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="iconfont icon-shoucang"></span>
+								收藏
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="iconfont icon-gouwudai"></span>
+								购物袋
+							</a>
+						</li>
+						<li>
+							<a href="">
+								公告
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<nav>
+				<div>
+					<h1>
+						<a href="">
+							<img src="img/login/logo.jpg" alt="">
+						</a>
+					</h1>
+					<p>用户登录</p>
+				</div>
+				
+			</nav>
+			<div class="login">
+				<div class="box">
+					<div class="change" id="change">
+						<button type="button" class="action">账户密码登录</button>
+						<button type="button">手机快捷登录</button>
+					</div>
+					<!-- 账户登录 -->
+					<div class="account" id="account">
+						<form>
+							<label>
+								<span></span>
+								<input class="warn" type="text" id="Azh" placeholder="手机/会员名称/邮箱"/>
+							</label>
+							<label>
+								<span></span>
+								<input type="password" id="Ama" src="" placeholder="请输入密码"/>
+							</label>
+							<a href="">忘记密码？</a>
+							<button type="button" id="Areg"><a href="javascript:;">点击登录</a></button>
+						</form>
+						<div class="three">
+							<p>使用合作网站账号登录优购：</p>
+							<ul>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 手机号登录 -->
+					<div class="phone" id="phone">
+						<form>
+							<label>
+								<span>手机号</span>
+								<input type="text" placeholder="请输入您的手机号"/>
+								
+							</label>
+							<label>
+								<span>短信验证码</span>
+								<input type="password" src="" placeholder=""/>
+								<button type="button">获取验证码</button>
+							</label>
+							<a href="">忘记密码？</a>
+							<button type="button" id="Preg"><a href="javascript:;">点击登录</a></button>
+						</form>
+						<div class="three">
+							<p>使用合作网站账号登录优购：</p>
+							<ul>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			<div class="bottom">
+				<p>Copyright © 2011-2014 Yougou Technology Co., Ltd. 
+			    	<a href="">粤ICP备09070608号-4</a>
+					 增值电信业务经营许可证：
+					 <a href="">粤 B2-20090203</a>
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript">
+			//登录方式切换
+			var change = document.getElementById('change');
+			var btns = change.getElementsByTagName('button');
+			var account = document.getElementById('account');
+			var phone = document.getElementById('phone');
+			console.log();
+				//账号登录
+				btns[0].onclick = function(){
+					account.style.display = 'block';
+					phone.style.display = 'none';
+					btns[0].className = 'action';
+					btns[1].className = '';
+				}
+				//手机登录
+				btns[1].onclick = function(){
+					account.style.display = 'none';
+					phone.style.display = 'block';
+					btns[0].className = '';
+					btns[1].className = 'action';
+				}
+			
+			//登录验证
+			var Areg = document.getElementById('Areg');
+			var Azh = document.getElementById('Azh');
+			var Ama = document.getElementById('Ama');
+			    var Login = [{
+			    	username:window.localStorage.getItem('username'),
+			    	password:window.localStorage.getItem('password'),
+			    }]
+			    
+				//账户登录验证
+				Azh.onfocus = function(){
+					Azh.style.boxShadow = '';
+				}
+				Ama.onfocus = function(){
+					Ama.style.boxShadow = '';
+				}
+				Areg.onclick = function(){
+					var zh = Azh.value;
+					var ma = Ama.value;
+					var onoff_zh = false;
+					var onoff_ma = false;
+					//正则验证格式  用户名正则，4到16位（字母，数字，下划线，减号）
+					var ch_zh = /^1[3456789]\d{9}$|^[a-zA-Z0-9_-]{4,16}$|^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+					var ch_ma = /^[a-zA-Z0-9]{4,16}$/;//4到16位（字母，数字）
+					if(!ch_zh.test(zh)){
+						Azh.style.animation = ' warn 1s linear';
+						Azh.style.boxShadow = '1px 1px 3px red,-1px -1px 3px red';
+						Azh.value = '';
+					}else{
+						onoff_zh = true;
+					}
+					if(!ch_ma.test(ma)){
+						Ama.style.animation = ' warn 1s linear';
+						Ama.style.boxShadow = '1px 1px 3px red,-1px -1px 3px red';
+						Ama.value = '';
+					}else{
+						onoff_ma = true;
+					}
+					
+					//验证用户信息
+					if(onoff_zh&&onoff_ma){
+						var obj = {
+							username:zh,
+							password:ma
+						}
+						var reg = false;
+						for(var i=0;i<Login.length;i++){
+							if(Login[i].username == obj.username&&Login[i].password == obj.password){
+								reg = true;
+							}
+						}
+						console.log(reg);
+						if(reg){
+							alert('登录成功');
+							window.localStorage.setItem('username',zh);
+							window.localStorage.setItem('password',ma);
+						    Areg.children[0].href = 'index.html';
+						}else{
+							alert('用户名或密码错误');
+							Ama.value = '';
+							Azh.value = '';
+						}
+					}
+				}
+		</script>
+	</body>
+</html>

@@ -1,3 +1,29 @@
+    //实现登录后的header页面的不同
+	var login = document.getElementById('login');
+	var shop = document.getElementById('shop');
+	var username = window.localStorage.getItem('username');
+	var password = window.localStorage.getItem('password');
+	console.log(username);
+		if(username&&password){
+		   login.innerHTML = '<a href="javascript:;">'+username+' /</a><a href="javascript:;"> 退出</a>';
+		}else{
+		   login.innerHTML = '<a href="reg.html">登录 /</a><a href="login.html"> 注册</a>';
+		}
+	
+		if(username&&password){
+			   shop.innerHTML = '<a href="shop.html"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
+		}else{
+			   shop.innerHTML = '<a href="reg.html"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
+		}
+		//退出
+		var out = document.getElementById('login').children[1];
+		console.log(out);
+		out.onclick = function(){
+			window.localStorage.removeItem('username');
+			window.localStorage.removeItem('password');
+			window.open('reg.html');
+		}
+	
 //导航栏
 var nav = document.getElementById('nav');
 var navfixde = document.getElementById('nav-fixde');
@@ -81,4 +107,31 @@ function Down(lis,down,content){
 			down.style.height = '0px';
 		}
 	})
+}
+
+
+//渲染商品列表
+function setPage(page){
+	var page_str =  '';
+	page_ul.innerHTML = '';
+	for(var i=0;i<data_arr.length;i++){
+		if(i>=(16-1)*(page-1)&&i<=(16-1)*(page-1)+15){
+			page_str += `<li>
+							<a href="${data_arr[i].link}" target="_blank">
+								<div class="img">
+									<img src="${data_arr[i].img}" alt="">
+								</div>
+								<div class="text">
+									<p>${data_arr[i].miaoshu}</p>
+									<p>
+										<i>&#165;&nbsp;<span>${data_arr[i].xianjia}</span></i>
+										<em>&#165;&nbsp;<span>${data_arr[i].yuanjia}</span></em>
+										<b>&#10084;</b>
+									</p>
+								</div>
+							</a>
+						</li>`;
+		}
+	}
+	page_ul.innerHTML = page_str;
 }

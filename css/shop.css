@@ -1,0 +1,271 @@
+.last nav {
+  height: 70px !important;
+  background: #fff;
+  border-bottom: none !important;
+}
+.last nav div {
+  width: 990px !important;
+  height: 100%;
+  margin: 0 auto;
+}
+.last nav div h1 {
+  float: left!important;
+  height: 100%!important;
+  width: 177px;
+}
+.last nav div h1 a {
+  width: 100%;
+  height: 100%;
+}
+.last nav div p {
+  float: left;
+  height: 70px;
+  font-size: 17px;
+  color: #8E8E8E;
+}
+.last nav div .right {
+  box-sizing: border-box;
+}
+.last nav div .right ul {
+  float: right;
+  margin-top: 30px;
+}
+.last nav div .right ul .action {
+  background: #333333;
+  color: #fff;
+}
+.last nav div .right ul .action i {
+  border: 10px solid #333;
+  border-color: transparent transparent transparent #333;
+}
+.last nav div .right ul li {
+  float: left;
+  width: 200px;
+  height: 20px;
+  background: #e8e8e8;
+  color: #666;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+}
+.last nav div .right ul li i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 10px solid #e8e8e8;
+  border-color: transparent transparent transparent #e8e8e8;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 100;
+}
+.last nav div .right ul li em {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 13px solid #333;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: -3px;
+  right: -26px;
+  z-index: 10;
+}
+.last .shop {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.last .shop .content {
+  width: 990px;
+  margin: 0 auto;
+}
+.last .shop .content .header {
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+}
+.last .shop .content .header ul li {
+  float: left;
+  line-height: 42px;
+  text-align: center;
+  color: #aaa;
+  font-size: 12px;
+}
+.last .shop .content .header ul li:nth-of-type(1) {
+  width: 59px;
+}
+.last .shop .content .header ul li:nth-of-type(1) input {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.last .shop .content .header ul li:nth-of-type(2) {
+  width: 369px;
+}
+.last .shop .content .header ul li:nth-of-type(3),
+.last .shop .content .header ul li:nth-of-type(4),
+.last .shop .content .header ul li:nth-of-type(5),
+.last .shop .content .header ul li:nth-of-type(6) {
+  width: 110px;
+}
+.last .shop .content .header ul li:nth-of-type(7) {
+  width: 120px;
+}
+.last .shop .content .body {
+  border: 1px solid #e8e8e8;
+  border-top: none;
+}
+.last .shop .content .body .list {
+  overflow: hidden;
+  border-bottom: 1px solid #e8e8e8;
+  height: 110px;
+}
+.last .shop .content .body .list ul {
+  overflow: hidden;
+  margin-top: 15px;
+}
+.last .shop .content .body .list ul li {
+  float: left;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+.last .shop .content .body .list ul li:nth-of-type(1) {
+  width: 120px;
+}
+.last .shop .content .body .list ul li:nth-of-type(1) input {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 30px;
+}
+.last .shop .content .body .list ul li:nth-of-type(1) span {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  padding: 5px;
+}
+.last .shop .content .body .list ul li:nth-of-type(2) {
+  width: 322px;
+  margin-top: 20px;
+}
+.last .shop .content .body .list ul li:nth-of-type(2) a {
+  color: #666;
+}
+.last .shop .content .body .list ul li:nth-of-type(3) {
+  width: 120px;
+  padding: 20px 0  0 20px;
+}
+.last .shop .content .body .list ul li:nth-of-type(3) p {
+  width: 100%;
+  text-align: left;
+}
+.last .shop .content .body .list ul li:nth-of-type(4) {
+  width: 70px;
+  padding: 20px 0  0 0;
+}
+.last .shop .content .body .list ul li:nth-of-type(4) p {
+  width: 100%;
+  text-align: left;
+}
+.last .shop .content .body .list ul li:nth-of-type(5) {
+  width: 120px;
+  padding: 20px 0  0 0;
+}
+.last .shop .content .body .list ul li:nth-of-type(5) dl {
+  width: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e9e9e9;
+}
+.last .shop .content .body .list ul li:nth-of-type(5) dl dt {
+  float: left;
+  width: 26px;
+  line-height: 26px;
+}
+.last .shop .content .body .list ul li:nth-of-type(5) dl dt:nth-of-type(2) {
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+}
+.last .shop .content .body .list ul li:nth-of-type(6) {
+  width: 90px;
+  padding: 20px 0  0 0;
+}
+.last .shop .content .body .list ul li:nth-of-type(6) p {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.last .shop .content .body .list ul li:nth-of-type(7) {
+  width: 125px;
+  padding: 20px 0  0 0;
+}
+.last .shop .content .body .list ul li:nth-of-type(7) p {
+  width: 100%;
+  text-align: center;
+}
+.last .shop .content .body .list ul li:nth-of-type(7) p a {
+  color: #666;
+}
+.last .shop .content .body .box1 {
+  padding: 20px 0 0 7px;
+  box-sizing: border-box;
+  height: 70px;
+}
+.last .shop .content .body .box1 p {
+  color: #666;
+  font-size: 14px;
+}
+.last .shop .content .footer {
+  width: 100%;
+  height: 54px;
+  background: #eee;
+}
+.last .shop .content .footer .left {
+  float: left;
+  margin-top: 15px;
+}
+.last .shop .content .footer .left span {
+  font-size: 13px;
+  background: #333;
+  color: #fff;
+  margin-left: 20px;
+  padding: 5px;
+}
+.last .shop .content .footer .right {
+  float: right;
+}
+.last .shop .content .footer .right span {
+  color: #666;
+  font-size: 12px;
+}
+.last .shop .content .footer .right span a {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.last .shop .content .footer .right button {
+  width: 129px;
+  height: 54px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.last .bottom {
+  border-top: 1px solid #e9e9e9;
+  height: 17px;
+  background: #fff;
+}
+.last .bottom p {
+  line-height: 24px;
+  text-align: center;
+  color: #5b5a5a;
+  font-size: 11px;
+}
+.last .bottom p a {
+  color: #bdbbba;
+  padding: 0 7px;
+}

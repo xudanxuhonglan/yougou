@@ -552,6 +552,8 @@
 			}
 			
 			
+			//渲染商品列表
+			
 			//右侧渲染
 			var page_ul = goods.getElementsByTagName('ul')[0]; 
 			var data_arr = [];
@@ -617,8 +619,31 @@
 					
 				}
 			}
-			console.log(page_oA.length);
-			//封装页面渲染函数
+			///console.log(page_oA.length);
+			//懒加载
+			var goods_lis = goods.getElementsByTagName('li');
+			for(var i=0;i<goods_lis.length;i++){//先判断一次让最开始有内容
+			
+				if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
+					
+					var good_img = goods_lis[i].querySelector('img');
+					var getsrc = good_img.getAttribute('getsrc');
+					good_img.src = getsrc;
+					console.log(goods_lis[i]);
+				}
+			}
+			document.onscroll = function(){
+				//alert()
+				for(var i=0;i<goods_lis.length;i++){
+					if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
+						console.log(goods_lis[i].getBoundingClientRect().top);
+						var good_img = goods_lis[i].querySelector('img');
+						var getsrc = good_img.getAttribute('getsrc');
+						good_img.src = getsrc;
+						console.log(goods_lis[i]);
+					}
+				}
+			}	
 			
 				
 	    </script>

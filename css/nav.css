@@ -229,7 +229,16 @@
   height: 290px;
   padding: 37px 0 37px 0 ;
   box-sizing: border-box;
-  background: #FFFFFF;
+  background: #fff;
+  position: relative;
+}
+.commodity .commodity-right .content .goods ul li a .img div {
+  background: #f5f5f5 url(../img/run.gif) no-repeat 50% 50%;
+  position: absolute;
+  width: 232px;
+  height: 232px;
+  top: 37px;
+  left: 0;
 }
 .commodity .commodity-right .content .goods ul li a .text {
   padding: 15px 10px 25px;

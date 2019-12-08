@@ -3,7 +3,6 @@
 	var shop = document.getElementById('shop');
 	var username = window.localStorage.getItem('username');
 	var password = window.localStorage.getItem('password');
-	console.log(username);
 		if(username&&password){
 		   login.innerHTML = '<a href="javascript:;">'+username+' /</a><a href="javascript:;"> 退出</a>';
 		}else{
@@ -119,7 +118,9 @@ function setPage(page){
 			page_str += `<li>
 							<a href="${data_arr[i].link}" target="_blank">
 								<div class="img">
-									<img src="${data_arr[i].img}" alt="">
+								<div>
+									<img src="1" alt="" getsrc="${data_arr[i].img}">
+								</div>
 								</div>
 								<div class="text">
 									<p>${data_arr[i].miaoshu}</p>
@@ -135,3 +136,29 @@ function setPage(page){
 	}
 	page_ul.innerHTML = page_str;
 }
+
+
+//懒加载
+var goods_lis = goods.getElementsByTagName('li');
+for(var i=0;i<goods_lis.length;i++){//先判断一次让最开始有内容
+
+	if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
+		
+		var good_img = goods_lis[i].querySelector('img');
+		var getsrc = good_img.getAttribute('getsrc');
+		good_img.src = getsrc;
+		console.log(goods_lis[i]);
+	}
+}
+document.onscroll = function(){
+	//alert()
+	for(var i=0;i<goods_lis.length;i++){
+		if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
+			console.log(goods_lis[i].getBoundingClientRect().top);
+			var good_img = goods_lis[i].querySelector('img');
+			var getsrc = good_img.getAttribute('getsrc');
+			good_img.src = getsrc;
+			console.log(goods_lis[i]);
+		}
+	}
+}	

@@ -6,6 +6,7 @@
 		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
 		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
 		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
@@ -529,22 +530,8 @@
 			
 			
 			
-			//移入商品时小星星出现
-			var goods = document.getElementById('goods');
-			var goods_lis = goods.getElementsByTagName('li');
-			for(var i=0;i<goods_lis.length;i++){
-				goods_lis[i].onmouseenter = function(){
-					var b = this.getElementsByTagName('b')[0];
-					b.style.display = 'block';
-				}
-				goods_lis[i].onmouseleave = function(){
-					var b = this.getElementsByTagName('b')[0];
-					b.style.display = 'none';
-				}
-			}
-			
-			
 			//右侧渲染
+			var goods = document.getElementById('goods');
 			var page_ul = goods.getElementsByTagName('ul')[0]; 
 			var data_arr = [];
 			for(var i=0;i<Data.length;i++){
@@ -603,9 +590,46 @@
 				}
 			}
 			console.log(page_oA.length);
-			//封装页面渲染函数
 			
+			
+			
+			
+			//移入商品时小星星出现
+			var goods_lis = goods.getElementsByTagName('li');
+			for(var i=0;i<goods_lis.length;i++){
+				goods_lis[i].onmouseenter = function(){
+					var b = this.getElementsByTagName('b')[0];
+					b.style.display = 'block';
+				}
+				goods_lis[i].onmouseleave = function(){
+					var b = this.getElementsByTagName('b')[0];
+					b.style.display = 'none';
+				}
 				
+			}
+			//懒加载
+			for(var i=0;i<goods_lis.length;i++){//先判断一次让最开始有内容
+			
+				if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
+					
+					var good_img = goods_lis[i].querySelector('img');
+					var getsrc = good_img.getAttribute('getsrc');
+					good_img.src = getsrc;
+					console.log(goods_lis[i]);
+				}
+			}
+			document.onscroll = function(){
+				//alert()
+				for(var i=0;i<goods_lis.length;i++){
+					if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
+						console.log(goods_lis[i].getBoundingClientRect().top);
+						var good_img = goods_lis[i].querySelector('img');
+						var getsrc = good_img.getAttribute('getsrc');
+						good_img.src = getsrc;
+						console.log(goods_lis[i]);
+					}
+				}
+			}	
 	    </script>
 	</body>
 </html>

@@ -233,6 +233,9 @@
   margin-left: 20px;
   padding: 5px;
 }
+.last .shop .content .footer .left span a {
+  color: #fff;
+}
 .last .shop .content .footer .right {
   float: right;
 }
@@ -254,7 +257,103 @@
   font-size: 14px;
   margin-left: 15px;
 }
+.last .area {
+  display: none;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.last .area .content {
+  width: 990px;
+  margin: 0 auto;
+}
+.last .area .content .title {
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 20px 0 20px 0;
+}
+.last .area .content .title span {
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+}
+.last .area .content .title span a {
+  color: #999999;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.last .area .content .title button {
+  float: right;
+  font-size: 13px;
+  background: #333;
+  color: #fff;
+  margin-left: 20px;
+  padding: 5px;
+}
+.last .area .content .title button a {
+  color: #fff;
+}
+.last .area .content .massige {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.last .area .content .massige .list {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.last .area .content .massige .list span {
+  float: left;
+  color: #333;
+  font-size: 16px;
+}
+.last .area .content .massige .list .select {
+  float: left;
+  margin-left: 10px;
+}
+.last .area .content .massige .list .select select {
+  width: 200px;
+  height: 25px;
+  color: #666;
+  background: #F5F5F5;
+}
+.last .area .content .massige .list .select input {
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 350px;
+  height: 25px;
+  color: #666;
+  border: 1px solid #a9a9a9;
+  border-radius: 2px;
+  background: #F5F5F5;
+}
+.last .area .content .massige .list p {
+  float: left;
+  color: #666;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.last .area .content .massige .list:nth-of-type(5) input {
+  width: 609px;
+}
+.last .area .content .page .title {
+  text-align: center;
+}
+.last .area .content .page .title span {
+  margin: 0 auto;
+}
+.last .area .content .page ul {
+  height: 100px;
+}
+.last .area .content .page ul li {
+  margin-top: 30px;
+  float: left;
+  width: 140px;
+  height: 42px;
+  margin-left: 130px;
+  border: 1px solid #9EA2AA;
+}
 .last .bottom {
+  clear: both;
   border-top: 1px solid #e9e9e9;
   height: 17px;
   background: #fff;

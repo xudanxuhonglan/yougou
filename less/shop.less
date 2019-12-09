@@ -74,6 +74,7 @@
 		}
 	}
 	.shop{
+		//display: none;
 		margin-bottom: 30px;
 		width: 100%;
 		.content{
@@ -230,6 +231,9 @@
 						color: #fff;
 						margin-left:20px;
 						padding: 5px;
+						a{
+							color: #fff;
+						}
 					}
 				}
 				.right{
@@ -256,7 +260,115 @@
 			}
 		}
 	}
+	
+	.area{
+		display: none;
+		margin-bottom: 30px;
+		width: 100%;
+		.content{
+			
+			width: 990px;
+			margin: 0 auto;
+			.title{
+				border-top:1px solid #e9e9e9;
+			    border-bottom:1px solid #e9e9e9;
+				padding:20px 0 20px 0;
+				span{
+					color: #666;
+					font-size: 18px;
+					font-weight: bold;
+					a{
+						color: #999999;
+						font-size: 12px;
+						text-decoration: underline;
+					}
+				}
+				button{
+					float: right;
+					font-size: 13px;
+					background: #333;
+					color: #fff;
+					margin-left:20px;
+					padding: 5px;
+					a{
+						color: #fff;
+					}
+				}
+			}
+			.massige{
+				margin-bottom:20px;
+				margin-top:20px;
+				overflow:hidden;
+				.list{
+					overflow:hidden;
+					margin-top:10px;
+					span{
+						float: left;
+						color: #333;
+						font-size: 16px;
+					}
+					.select{
+						float: left;
+						margin-left:10px;
+						margin-left:10px;
+						select{
+							width: 200px;
+							height: 25px;
+							color: #666;
+							background: #F5F5F5;
+						}
+						input{
+							padding: 0 10px;
+							box-sizing: border-box;
+							width: 350px;
+							height: 25px;
+							color: #666;
+							border: 1px solid rgb(169, 169, 169);
+							border-radius: 2px;
+							background: #F5F5F5;
+						}
+						
+					}
+					p{
+						float: left;
+						color: #666;
+						font-size: 13px;
+						margin-left: 10px;
+					}
+				}
+				.list:nth-of-type(5){
+					input{
+						
+						width: 609px;
+						
+					}
+				}
+			}
+			.page{
+				.title{
+					text-align:center;
+					span{
+						margin: 0 auto;
+					}
+				}
+				ul{
+					height:100px;
+					li{
+						margin-top: 30px;
+						float: left;
+						width: 140px;
+						height:42px;
+						margin-left: 130px;
+						border: 1px solid #9EA2AA;
+					}
+				}
+			}
+		}
+	}
+	
+	
 	.bottom{
+		clear: both;
 		border-top: 1px solid #e9e9e9;
 		height:17px;
 		background:#fff;

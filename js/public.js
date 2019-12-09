@@ -10,9 +10,9 @@
 		}
 	
 		if(username&&password){
-			   shop.innerHTML = '<a href="shop.html"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
+			   shop.innerHTML = '<a href="shop.html" target="_blank"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
 		}else{
-			   shop.innerHTML = '<a href="reg.html"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
+			   shop.innerHTML = '<a href="reg.html" target="_blank"><span class="iconfont icon-gouwudai"></span>&nbsp;购物袋</a>';
 		}
 		//退出
 		var out = document.getElementById('login').children[1];

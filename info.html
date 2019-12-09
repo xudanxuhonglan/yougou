@@ -177,7 +177,7 @@
 						<div class="part2">
 							<div class="size">
 								<span>尺码：</span>
-								<ul>
+								<ul id="AllSize">
 									<li>34</li>
 									<li id="mysize">35</li>
 									<li>36</li>
@@ -188,14 +188,13 @@
 								</ul>
 								<i>查看详细尺码&gt;&gt;</i>
 							</div>
-							<div class="num">
+							<div class="num" id="num">
 								<span>数量：</span>
 								<div>
 									<input type="text" value="1" id="num">
 									<button type="button"></button>
 									<button type="button"></button>
 								</div>
-								
 							</div>
 							<div class="btn">
 								<button type="button" id="Addshop">加入购物袋</button>
@@ -487,7 +486,6 @@
 			var hash = window.location.hash.split('#')[1];
 			
 		    //页面数据渲染
-			
 			var data_arr = [];
 			//拿到对应分类的所有商品数据
 			for(var i=0;i<Data.length;i++){
@@ -584,7 +582,6 @@
 			}
 			
 			//商品图移入切换
-			
 			var left_img = document.getElementById('left_img').children[0];
 			var bigimg = document.getElementById('bigimg').children[0]
 			var left_lis = left_list.getElementsByTagName('li');
@@ -601,11 +598,31 @@
 					
 				}
 			}
+			//尺码选择
+			var AllSize = document.getElementById('AllSize');
+			AllSize.onclick = function(ev){
+				for(var i=0;i<this.children.length;i++){
+					this.children[i].id = '';
+				}
+				ev.target.id = 'mysize';
+			}
+			//数量选择
+			var Num = document.getElementById('num');
+			var Numchose = Num.getElementsByTagName('button');
+			var Numinput = Num.getElementsByTagName('input')[0];
+			Numchose[0].onclick = function(){
+				Numinput.value = parseInt(Numinput.value)+1;
+			}
+			Numchose[1].onclick = function(){
+				Numinput.value = parseInt(Numinput.value)-1;
+			}
+			
 			//放大镜
 			var origin = document.getElementById('origin');
 			var box = document.getElementById('left_img');
 			var bigbox = document.getElementById('bigimg');
 			box.onmouseenter = function(ev){
+				this.style.cursor = 'crosshair';
 				origin.style.display = 'block';
 				bigbox.style.display = 'block';
 				box.onmousemove = function(ev){
@@ -665,7 +682,7 @@
 			var Addshop = document.getElementById('Addshop');
 			var Addshop_data = '';
 			Addshop.onclick = function(){
-				
+				console.log(Numinput.value);
 				for(var i=0;i<data_arr.length;i++){
 					var page = data_arr[i].page;
 					
@@ -673,7 +690,7 @@
 					if(page == hash){
 						Addshop_data = data_arr[i];
 						var mysize = document.getElementById('mysize').innerHTML;
-						var num = document.getElementById('num').value;
+						var num = Numinput.value;
 						var list = {
 							img:data_arr[i].img,
 							title:data_arr[i].miaoshu,
@@ -685,7 +702,6 @@
 						//window.localStorage.removeItem('list');
 						var getjson = JSON.parse(window.localStorage.getItem('json'));
 						if(getjson){
-							console.log(hash)
 							getjson[hash] = list;
 							window.localStorage.setItem('json',JSON.stringify(getjson));
 						}else{

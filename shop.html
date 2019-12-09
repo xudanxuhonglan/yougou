@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		
 	</head>
 	<body>
 		<div class="last">
@@ -67,8 +68,8 @@
 						</a>
 					</h1>
 					<p><img src="img/shop/logo1.png" ></p>
-					<div class="right">
-						<ul>
+					<div class="right" >
+						<ul id="chose">
 							<li class="action">
 								我的购物袋
 								<i></i>
@@ -86,8 +87,8 @@
 					</div>
 				</div>
 			</nav>
-			<div class="shop">
-				<div class="content">
+			<div class="shop" id="shopping">
+				<div class="content" id="content">
 					<div class="header">
 						<ul>
 							<li>
@@ -136,23 +137,88 @@
 								</li>
 							</ul>
 						</div> -->
-                        <div class="box1">
-							<p>什么宝贝都没有哦，快去加购吧~~~</p>
-						</div>
 					</div>
 					<div class="footer">
 						<div class="left">
-							<span>继续购物</span>
-							<span>清空购物车</span>
+							<span><a href="index.html">继续购物</a></span>
+							<span id="clearAll">清空购物车</span>
 						</div>
 						<div class="right">
-							<span>总计（不含运费）:<a href="">999</a></span>
+							<span>总计（不含运费）:<a href="" id="balance">0</a></span>
 							<button type="button">去结算</button>
 						</div>
 					</div>
 				</div>
-				
 			</div>
+			<div class="area" id="area">
+				<div class="content">
+					<div class="title">
+						<span>请填写您的收获地址：<a href="" id="shop_back">返回购物车</a></span>
+						<button type="button"><a href="">管理地址</a></button>
+					</div>
+					<div class="massige">
+						<div class="list">
+							<span>联系方式：</span>
+							<div class="select">
+							  <input type="text">
+							</div>
+							<p>( 用户发货通知和送货确认 )</p>
+						</div>
+						<div class="list">
+							<span>邮政编码：</span>
+							<div class="select">
+							  <input type="text">
+							</div>
+							<p>( 请填写准确的邮编，以保证商品快速、准确到达 )</p>
+						</div>
+						<div class="list">
+							<span>真实姓名：</span>
+							<div class="select">
+							  <input type="text">
+							</div>
+							<p>( 请输入收货人姓名，最多五个汉字 )</p>
+						</div>
+						<div class="list">
+							<span>收货地址：</span>
+							<div data-toggle="distpicker" class="select">
+							  <select></select>
+							  <select></select>
+							  <select></select>
+							</div>
+						</div>
+						<div class="list">
+							<span>详细地址：</span>
+							<div class="select">
+							  <input type="text">
+							</div>
+						</div>
+						
+					</div>
+					<div class="page">
+						<div class="title">
+							<span>选择付款方式</span>
+						</div>
+						<ul>
+							<li>
+								<a href="">
+									<img src="https://pcs1.ygimg.cn/template/common/images/banklst/bank-img13.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="https://pcs2.ygimg.cn/template/common/images/banklst/bank-img45.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="https://pcs1.ygimg.cn/template/common/images/banklst/bank-img14.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
 			<div class="bottom">
 				<p>Copyright © 2011-2014 Yougou Technology Co., Ltd. 
 			    	<a href="">粤ICP备09070608号-4</a>
@@ -161,6 +227,10 @@
 				</p>
 			</div>
 		</div>
+		<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/distpicker.data.js"></script>
+		  <script src="js/distpicker.js"></script>
+		  <script src="js/main.js"></script>
 		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript">
 			//从本地存储中拿到数据
@@ -189,7 +259,7 @@
 									<li>
 										<dl>
 											<dt>-</dt>
-											<dt>${data[attr].num}</dt>
+											<dt id="num">${data[attr].num}</dt>
 											<dt>+</dt>
 										</dl>
 									</li>
@@ -213,7 +283,6 @@
 			var shop = document.getElementById('shop');
 			var username = window.localStorage.getItem('username');
 			var password = window.localStorage.getItem('password');
-			console.log(username);
 				if(username&&password){
 				   login.innerHTML = '<a href="javascript:;">'+username+' /</a><a href="javascript:;"> 退出</a>';
 				}else{
@@ -227,7 +296,6 @@
 				}
 				//退出
 				var out = document.getElementById('login').children[1];
-				console.log(out);
 				out.onclick = function(){
 					window.localStorage.removeItem('username');
 					window.localStorage.removeItem('password');
@@ -235,19 +303,89 @@
 				}
 				
 				
-				//删除(有bug)
-				var del = document.getElementsByClassName('del');
-				for(var i=0;i<del.length;i++){
-					del[i].onclick = function(){
-						var num = this.getAttribute('num');
-						var data = JSON.parse(window.localStorage.getItem('json'));
-						delete data[num] //删除该对象的数据
-						window.localStorage.setItem('json',data);
-						location.reload()
-						xuanran()
-						
+			//删除(有bug)
+			var del = document.getElementsByClassName('del');
+			for(var i=0;i<del.length;i++){
+				del[i].onclick = function(){
+					this.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+				}
+			}
+			//清空
+			var clearAll = document.getElementById('clearAll');
+			var list = document.getElementById('list');
+			clearAll.onclick = function(){
+				list.innerHTML = '<div class="box1"><p>什么宝贝都没有哦，快去加购吧~~~</p></div>';
+			}
+				
+			//结算
+			var content = document.getElementById('content');
+			var input = content.getElementsByTagName('input');
+			var jiesuan = document.getElementById('balance');
+				//全选
+				input[0].oninput = function(){
+					if(input[0].checked){
+						var prise = 0;
+						var num = 0;
+						var sum = 0;
+						for(var i=1;i<input.length;i++){
+							num = parseInt(input[i].parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].children[1].innerHTML); //获取选中商品的数量
+							prise = parseInt(input[i].parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[0].innerHTML); //获取选中商品的价格 
+							sum += prise*num;
+							input[i].checked = true;
+						}
+						jiesuan.innerHTML = sum;
+					}
+					if(!input[0].checked){
+						for(var i=1;i<input.length;i++){
+							input[i].checked = false;
+							jiesuan.innerHTML = 0;
+						}
 					}
 				}
+				//单个加入
+				for(var i=1;i<input.length;i++){
+					input[i].oninput = function(){
+						if(this.checked){
+							var jsprise = parseInt(jiesuan.innerHTML);//结算栏原有的价格
+							var prise = parseInt(this.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[0].innerHTML); //获取选中商品的价格 
+							var num = parseInt(this.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].children[1].innerHTML); //获取选中商品的数量
+							jiesuan.innerHTML = jsprise+prise*num;
+						}
+						if(!this.checked){
+							var jsprise = parseInt(jiesuan.innerHTML);//结算栏原有的价格
+							var prise = parseInt(this.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[0].innerHTML); //获取选中商品的价格 
+							var num = parseInt(this.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].children[1].innerHTML); //获取选中商品的数量
+							jiesuan.innerHTML = jsprise-prise*num;
+							input[0].checked = false;
+						}
+					}
+					
+				}
+				
+			//提交订单
+			var submit = jiesuan.parentElement.nextElementSibling;
+			var chose = document.getElementById('chose').children;
+			var action = document.getElementsByClassName('action')[0];
+			var shopping = document.getElementById('shopping');
+			var area = document.getElementById('area');
+			submit.onclick = function(){
+				for(var i=0;i<chose.length;i++){
+					chose[i].className = '';
+				}
+				chose[1].className = 'action';
+				shopping.style.display = 'none';
+				area.style.display = 'block';
+			}
+			//返回购物车
+			var shop_back = document.getElementById('shop_back');
+			shop_back.onclick = function(){
+				for(var i=0;i<chose.length;i++){
+					chose[i].className = '';
+				}
+				chose[0].className = 'action';
+				shopping.style.display = 'block';
+				area.style.display = 'none';
+			}
 		</script>
 	</body>
 </html>

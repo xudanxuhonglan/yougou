@@ -132,6 +132,7 @@ nav .nav .n_left li a:hover {
 }
 nav .nav .n_right {
   float: right;
+  position: relative;
 }
 nav .nav .n_right input {
   width: 180px;
@@ -140,7 +141,9 @@ nav .nav .n_right input {
   border-bottom: 1px solid #333333;
 }
 nav .nav .n_right span {
-  margin-left: -20px;
+  position: absolute;
+  top:-10px;
+  right:0;
 }
 nav .down {
   width: 100%;
@@ -210,6 +213,7 @@ nav .nav-fixde .nav .n_left li {
 }
 nav .nav-fixde .nav .n_right {
   float: right;
+  position:relative;
 }
 nav .nav-fixde .nav .n_right input {
   width: 180px;
@@ -218,7 +222,9 @@ nav .nav-fixde .nav .n_right input {
   border-bottom: 1px solid #333333;
 }
 nav .nav-fixde .nav .n_right span {
-  margin-left: -20px;
+  position: absolute;
+  top:-10px;
+  right:0;
 }
 nav .nav-fixde .down-fixde {
   width: 100%;

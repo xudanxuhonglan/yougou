@@ -28,6 +28,7 @@ var nav = document.getElementById('nav');
 var navfixde = document.getElementById('nav-fixde');
 document.onscroll = function(){
 	var top = nav.getBoundingClientRect().bottom;
+	console.log(top);
 	//当nav的底部距窗口顶部值<0时就显示navfixde,反之隐藏
 	if(top<0){
 		navfixde.style.display = 'block';

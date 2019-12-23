@@ -399,13 +399,19 @@
 			var nav = document.getElementById('nav');
 			
 			window.onscroll = function(ev){
-				var top = nav.getBoundingClientRect().top;
-				if(top<0){
-					left1.style.display = 'block';
-					left.style.display = 'none';
-				}else{
-					left1.style.display = 'none';
-					left.style.display = 'block';
+				window.onscroll = function(ev){
+					var bottom = nav.getBoundingClientRect().bottom;
+					console.log(bottom);
+					if(bottom<0){
+						left1.style.display = 'block';
+						left.style.display = 'none';
+						navfixde.style.display = 'block';
+					}else{
+						left1.style.display = 'none';
+						left.style.display = 'block';
+						navfixde.style.display = 'none';
+					}
+					
 				}
 				
 			}
@@ -635,7 +641,7 @@
 				//alert()
 				for(var i=0;i<goods_lis.length;i++){
 					if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
-						console.log(goods_lis[i].getBoundingClientRect().top);
+						//console.log(goods_lis[i].getBoundingClientRect().top);
 						var good_img = goods_lis[i].querySelector('img');
 						var getsrc = good_img.getAttribute('getsrc');
 						good_img.src = getsrc;

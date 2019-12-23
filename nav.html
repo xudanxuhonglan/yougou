@@ -5,7 +5,7 @@
 		<mata name="keywords" content="优购网,优购时尚商城,优购网上鞋城"></mata>
 		<mata name="discription" content="优购网-时尚服饰鞋包网购首选,经营耐克、阿迪达斯、Kappa、匡威、百丽、他她、天美意、森达等众多知名品牌,100%专柜正品,免费送货,10天退换货,提供愉悦购物体验!"></mata>
 		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
-		<link rel="Shortcut Icon" href="img/title.png">
+		<link rel="Shortcut icon" href="img/title.png">
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
@@ -398,16 +398,22 @@
 			var nav = document.getElementById('nav');
 			
 			window.onscroll = function(ev){
-				var top = nav.getBoundingClientRect().top;
-				if(top<0){
+				var bottom = nav.getBoundingClientRect().bottom;
+				console.log(bottom);
+				if(bottom<0){
 					left1.style.display = 'block';
 					left.style.display = 'none';
+					navfixde.style.display = 'block';
 				}else{
 					left1.style.display = 'none';
 					left.style.display = 'block';
+					navfixde.style.display = 'none';
 				}
 				
 			}
+			
+				
+				
 			
 			function left(parent,content,scroll){
 				var left = document.getElementById(parent);
@@ -615,18 +621,18 @@
 					var good_img = goods_lis[i].querySelector('img');
 					var getsrc = good_img.getAttribute('getsrc');
 					good_img.src = getsrc;
-					console.log(goods_lis[i]);
+					//console.log(goods_lis[i]);
 				}
 			}
 			document.onscroll = function(){
 				//alert()
 				for(var i=0;i<goods_lis.length;i++){
 					if(goods_lis[i].getBoundingClientRect().top<window.innerHeight){
-						console.log(goods_lis[i].getBoundingClientRect().top);
+						//console.log(goods_lis[i].getBoundingClientRect().top);
 						var good_img = goods_lis[i].querySelector('img');
 						var getsrc = good_img.getAttribute('getsrc');
 						good_img.src = getsrc;
-						console.log(goods_lis[i]);
+						//console.log(goods_lis[i]);
 					}
 				}
 			}	

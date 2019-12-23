@@ -405,13 +405,16 @@
 			var nav = document.getElementById('nav');
 			
 			window.onscroll = function(ev){
-				var top = nav.getBoundingClientRect().top;
-				if(top<0){
+				var bottom = nav.getBoundingClientRect().bottom;
+				console.log(bottom);
+				if(bottom<0){
 					left1.style.display = 'block';
 					left.style.display = 'none';
+					navfixde.style.display = 'block';
 				}else{
 					left1.style.display = 'none';
 					left.style.display = 'block';
+					navfixde.style.display = 'none';
 				}
 				
 			}
